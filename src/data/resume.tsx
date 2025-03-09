@@ -150,7 +150,7 @@ export const DATA = {
         <ul className="ml-1">
           <li>
             &#x2022; Edited a high-quality short film that effectively conveyed
-            the company's message.
+            the company&apos;s message.
           </li>
           <li>
             &#x2022; Enhanced visual storytelling to create a compelling
@@ -158,8 +158,8 @@ export const DATA = {
           </li>
           <li>&#x2022; Ensured a polished and professional final product.</li>
           <li>
-            &#x2022; Supported the company's branding efforts through impactful
-            visuals.
+            &#x2022; Supported the company&apos;s branding efforts through
+            impactful visuals.
           </li>
         </ul>
       ),
