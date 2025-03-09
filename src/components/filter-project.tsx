@@ -10,10 +10,14 @@ const BLUR_FADE_DELAY = 0.04;
 const FilterProject = () => {
   const [activeCategory, setActiveCategory] = useState("Website");
 
-  const filteredData =
-    activeCategory === "Website"
-      ? DATA.projects.filter((item) => item.category.includes(activeCategory))
-      : DATA.projects.filter((item) => item.category.includes(activeCategory));
+  // const filteredData =
+  //   activeCategory === "Website"
+  //     ? DATA.projects.filter((item) => item.category.includes(activeCategory))
+  //     : DATA.projects.filter((item) => item.category.includes(activeCategory));
+
+  const filteredData = DATA.projects.filter((item) =>
+    item.category.includes(activeCategory)
+  );
 
   return (
     <div className="space-y-12 w-full py-4">
