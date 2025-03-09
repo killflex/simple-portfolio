@@ -18,8 +18,8 @@ const FilterProject = () => {
     <div className="space-y-12 w-full py-4">
       {/* Filter Buttons */}
       <div className="flex items-center justify-center max-w-[800px] space-x-2 mt-4">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          {DATA.categories.map((category) => (
+        {DATA.categories.map((category) => (
+          <BlurFade key={category} delay={BLUR_FADE_DELAY * 11}>
             <Button
               key={category}
               size={"category"}
@@ -28,8 +28,8 @@ const FilterProject = () => {
             >
               {category}
             </Button>
-          ))}
-        </BlurFade>
+          </BlurFade>
+        ))}
       </div>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
         {filteredData.length > 0 ? (
