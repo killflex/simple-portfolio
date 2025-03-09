@@ -10,11 +10,6 @@ const BLUR_FADE_DELAY = 0.04;
 const FilterProject = () => {
   const [activeCategory, setActiveCategory] = useState("Website");
 
-  // const filteredData =
-  //   activeCategory === "Website"
-  //     ? DATA.projects.filter((item) => item.category.includes(activeCategory))
-  //     : DATA.projects.filter((item) => item.category.includes(activeCategory));
-
   const filteredData = DATA.projects.filter((item) =>
     item.category.includes(activeCategory)
   );

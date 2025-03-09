@@ -222,7 +222,33 @@ export const DATA = {
       description:
         "VGG-16 based CNN arch w/ 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
       technologies: ["Kotlin", "Python", "Tensorflow"],
-      category: ["Mobile", "ML"],
+      category: "Mobile",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/killflex/melasma-kotlin",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Article",
+          href: "https://docs.google.com/document/d/1oxGFg7w0IqBaPzeMeH32gxXmxCJakOWzV8fHtO1ESx0",
+          icon: <Icons.paper className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741454866/melasmadiagnosis_wf7zsi.png",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Melasma Diagnoser",
+      href: "https://github.com/killflex/melasma-kotlin",
+      dates: "",
+      active: true,
+      description:
+        "VGG-16 based CNN arch w/ 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
+      technologies: ["Kotlin", "Python", "Tensorflow"],
+      category: "ML",
       links: [
         {
           type: "Source",
