@@ -20,6 +20,7 @@ interface Props {
   link?: string;
   image?: string;
   video?: string;
+  design?: string;
   links?: readonly {
     icon: React.ReactNode;
     type: string;
@@ -37,6 +38,7 @@ export function ProjectCard({
   link,
   image,
   video,
+  design,
   links,
   className,
 }: Props) {
@@ -66,7 +68,16 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-40 w-full overflow-hidden object-cover object-top "
+          />
+        )}
+        {design && (
+          <Image
+            src={design}
+            alt={title}
+            width={500}
+            height={300}
+            className="h-72 w-full overflow-hidden object-cover object-center"
           />
         )}
       </Link>
