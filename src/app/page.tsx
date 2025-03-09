@@ -19,7 +19,7 @@ export default function Page() {
           <div className="gap-2 flex justify-between items-center">
             <div className="flex-col flex flex-1 space-y-1.5 justify-center items">
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <div className="flex items-center gap-1.5 text-zinc-400 text-xs tracking-wide">
+                <div className="flex items-center gap-1.5 font-sans text-sm text-muted-foreground dark:prose-invert">
                   <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                     <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
                   </span>
@@ -42,7 +42,7 @@ export default function Page() {
                   <Link
                     href={DATA.cvurl}
                     target="_blank"
-                    className="flex flex-row justify-center items-center gap-1 text-[10px]"
+                    className="flex flex-row justify-center items-center gap-1 text-xs"
                   >
                     Download CV
                     {DATA.cvdownload}

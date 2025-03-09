@@ -36,10 +36,7 @@ export const DATA = {
     "Redshift",
     "Octane",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "ferryhasan10@gmail.com",
     tel: "+6281214160006",

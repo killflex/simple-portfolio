@@ -22,6 +22,7 @@ const FilterProject = () => {
           <BlurFade key={category} delay={BLUR_FADE_DELAY * 11}>
             <Button
               key={category}
+              className="space-x-2"
               size={"category"}
               variant={activeCategory === category ? "default" : "outline"}
               onClick={() => setActiveCategory(category)}

@@ -260,8 +260,8 @@ export const Icons = {
     <svg
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
-      width="14"
-      height="14"
+      width="16"
+      height="16"
       fill="none"
       viewBox="0 0 24 24"
     >
