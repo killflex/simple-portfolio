@@ -11,9 +11,10 @@ export const DATA = {
   summary:
     "Passionate in developing dynamic, scalable web applications and designing engaging motion designs. Proficient in full-stack development, including responsive UI design, API integration, and database management.",
   cvurl:
-    "https://drive.google.com/file/d/101SXdAiCZwYvQtmmXH-0B_Qu60L5jNxf/view?usp=sharing",
+    "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
-  avatarUrl: "/ferry.png",
+  avatarUrl:
+    "https://res.cloudinary.com/dn2tic45s/image/upload/v1742105264/ferry_ppsopan_u4j8yt.jpg",
   skills: [
     "React",
     "Next.js",
@@ -312,7 +313,7 @@ export const DATA = {
       active: true,
       description:
         "Education based Bela Negara Indonesia mobile game, aiming to facilitate more interactive and effective learning.",
-      technologies: ["Construct 3", "Gradle"],
+      technologies: ["Construct 3", "Gradle", "Cordova 11"],
       category: "Mobile",
       links: [
         {
