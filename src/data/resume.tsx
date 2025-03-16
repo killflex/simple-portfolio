@@ -16,16 +16,19 @@ export const DATA = {
   avatarUrl:
     "https://res.cloudinary.com/dn2tic45s/image/upload/v1742105264/ferry_ppsopan_u4j8yt.jpg",
   skills: [
-    "React",
+    "React.js",
     "Next.js",
     "Typescript",
     "Tailwind CSS",
-    "Boostrap",
     "Node.js",
+    "Express",
     "PHP",
     "Laravel",
     "Python",
     "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
   ],
   skills2: [
     "Figma",
@@ -34,8 +37,6 @@ export const DATA = {
     "Photoshop",
     "Blender",
     "Cinema 4D",
-    "Redshift",
-    "Octane",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
