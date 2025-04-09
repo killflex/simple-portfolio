@@ -14,7 +14,7 @@ export const DATA = {
     "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
   avatarUrl:
-    "https://res.cloudinary.com/dn2tic45s/image/upload/v1742105264/ferry_ppsopan_u4j8yt.jpg",
+    "https://res.cloudinary.com/dn2tic45s/image/upload/c_fill,w_500,h_500/v1744202887/ferry_uoxp7b.jpg",
   skills: [
     "React.js",
     "Next.js",
