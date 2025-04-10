@@ -1,6 +1,8 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import ClarityScript from "@/components/clarity-script";
+import GoogleAnalytics from "@/components/google-analytics";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -65,6 +67,8 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>
             {children}
             <Navbar />
+            <GoogleAnalytics />
+            <ClarityScript />
           </TooltipProvider>
         </ThemeProvider>
       </body>
