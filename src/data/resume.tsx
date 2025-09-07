@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/surabaya",
   description: "Full Stack Developer and Motion Designer",
   summary:
-    "Passionate in developing dynamic, scalable web applications and designing engaging motion designs. Proficient in full-stack development, including responsive UI design, API integration, and database management.",
+    "Passionate in developing dynamic, scalable web applications, and designing engaging motion designs. Proficient in full-stack development, including responsive UI design, API integration, and database management with expertise using React.js, Next.js, and Laravel.",
   cvurl:
     "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
@@ -57,13 +57,6 @@ export const DATA = {
 
         navbar: true,
       },
-      // X: {
-      //   name: "X",
-      //   url: "https://x.com/fleksipi",
-      //   icon: Icons.x,
-
-      //   navbar: true,
-      // },
       Instagram: {
         name: "Instagram",
         url: "https://www.instagram.com/killflex",
@@ -213,6 +206,32 @@ export const DATA = {
   ],
   categories: ["Website", "Mobile", "ML", "Motion", "Design"],
   projects: [
+    {
+      title: "Analytix SaaS",
+      href: "https://github.com/killflex/analytix-practice",
+      dates: "",
+      active: true,
+      description:
+        "A sleek, single-page static landing page for a fictional data analytics service, focused on visual appeal.",
+      technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "Framer", "Lenis"],
+      category: "Website",
+      links: [
+        {
+          type: "Website",
+          href: "https://analytix-killflex.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/killflex/analytix-practice",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dn2tic45s/image/upload/v1745987244/analytix-1080_p3yzoo.png",
+      video: "",
+      design: "",
+    },
     {
       title: "Melasma Diagnoser",
       href: "https://github.com/killflex/melasma-kotlin",
