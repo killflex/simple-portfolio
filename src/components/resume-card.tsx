@@ -3,7 +3,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -43,9 +42,9 @@ export const ResumeCard = ({
     <div>
       {disabled ? (
         <Link href={href || "#"} className="block" onClick={handleClick}>
-          <Card className="flex">
+          <Card className="flex border-none shadow-none bg-transparent hover:bg-accent/50 transition-colors duration-300 p-2 rounded-lg -mx-2">
             <div className="flex-grow items-center flex-col group">
-              <CardHeader>
+              <CardHeader className="p-0">
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                     {title}
@@ -54,7 +53,7 @@ export const ResumeCard = ({
                         {badges.map((badge, index) => (
                           <Badge
                             variant="secondary"
-                            className="align-middle text-xs"
+                            className="align-middle text-xs rounded-full px-2 py-0.5 font-normal"
                             key={index}
                           >
                             {badge}
@@ -74,33 +73,26 @@ export const ResumeCard = ({
                   </div>
                 </div>
                 {subtitle && (
-                  <div className="font-sans text-xs">{subtitle}</div>
+                  <div className="font-sans text-xs text-muted-foreground">{subtitle}</div>
                 )}
               </CardHeader>
               {description && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{
-                    opacity: isExpanded ? 1 : 0,
-
-                    height: isExpanded ? "auto" : 0,
-                  }}
-                  transition={{
-                    duration: 0.7,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="mt-2 text-xs sm:text-sm list-disc"
+                <div
+                  className={cn(
+                    "mt-2 text-xs sm:text-sm list-disc overflow-hidden transition-all duration-700 ease-in-out text-muted-foreground",
+                    isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                  )}
                 >
                   {description}
-                </motion.div>
+                </div>
               )}
             </div>
           </Card>
         </Link>
       ) : (
-        <Card className="flex">
+        <Card className="flex border-none shadow-none bg-transparent p-2 -mx-2">
           <div className="flex-grow items-center flex-col group mb-2">
-            <CardHeader>
+            <CardHeader className="p-0">
               <div className="flex items-center justify-between gap-x-2 text-base">
                 <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                   {title}
@@ -109,7 +101,7 @@ export const ResumeCard = ({
                       {badges.map((badge, index) => (
                         <Badge
                           variant="secondary"
-                          className="align-middle text-xs"
+                          className="align-middle text-xs rounded-full px-2 py-0.5 font-normal"
                           key={index}
                         >
                           {badge}
@@ -122,7 +114,7 @@ export const ResumeCard = ({
                   {period}
                 </div>
               </div>
-              {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+              {subtitle && <div className="font-sans text-xs text-muted-foreground">{subtitle}</div>}
             </CardHeader>
           </div>
         </Card>

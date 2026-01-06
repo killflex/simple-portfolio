@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
 
 @layer base {
     :root {
@@ -68,27 +68,47 @@
 
   @layer base {
     * {
-      @apply border-border;
+      border-color: hsl(var(--border));
     }
     body {
-      @apply bg-background text-foreground;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
     }
   }
 
   h3 code {
-    @apply !text-lg md:!text-xl;
+    font-size: 1.125rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    h3 code {
+      font-size: 1.25rem !important;
+    }
   }
   
   pre {
-    @apply !px-0 rounded-lg overflow-x-auto py-4
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
    
   pre [data-line] {
-    @apply px-4
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   code {
-    @apply text-sm md:text-base !leading-loose;
+    font-size: 0.875rem;
+    line-height: 2 !important;
+  }
+  
+  @media (min-width: 768px) {
+    code {
+      font-size: 1rem;
+    }
   }
   
   pre > code {
@@ -116,7 +136,11 @@
   code[data-line-numbers] > [data-line]::before {
     counter-increment: line;
     content: counter(line);
-    @apply inline-block w-4 mr-4 text-right text-gray-500;
+    display: inline-block;
+    width: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+    color: rgb(107 114 128);
   }
  
   code {
