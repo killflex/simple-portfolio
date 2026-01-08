@@ -24,7 +24,7 @@ export default function Navbar() {
                   aria-label={item.label}
                   href={item.href}
                   className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
+                    buttonVariants({ variant: "ghost", size: "sm" }),
                     "size-12"
                   )}
                 >
@@ -48,7 +48,7 @@ export default function Navbar() {
                     aria-label={name}
                     href={social.url}
                     className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      buttonVariants({ variant: "ghost", size: "sm" }),
                       "size-12"
                     )}
                   >
