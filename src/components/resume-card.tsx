@@ -19,8 +19,6 @@ interface ResumeCardProps {
   disabled?: boolean;
 }
 export const ResumeCard = ({
-  logoUrl,
-  altText,
   title,
   subtitle,
   href,
@@ -42,8 +40,8 @@ export const ResumeCard = ({
     <div>
       {disabled ? (
         <Link href={href || "#"} className="block" onClick={handleClick}>
-          <Card className="flex border-none shadow-none bg-transparent hover:bg-accent/50 transition-colors duration-300 p-2 rounded-lg -mx-2">
-            <div className="flex-grow items-center flex-col group">
+          <Card className="flex border-none shadow-none bg-transparent hover:bg-accent/50 transition-colors duration-300 p-0 rounded-lg">
+            <div className="grow items-center flex-col group">
               <CardHeader className="p-0">
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
@@ -63,7 +61,7 @@ export const ResumeCard = ({
                     )}
                     <ChevronRightIcon
                       className={cn(
-                        "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                        "size-4 translate-x-0 transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
                         isExpanded ? "rotate-90" : "rotate-0"
                       )}
                     />
@@ -73,14 +71,16 @@ export const ResumeCard = ({
                   </div>
                 </div>
                 {subtitle && (
-                  <div className="font-sans text-xs text-muted-foreground">{subtitle}</div>
+                  <div className="font-sans text-xs text-muted-foreground">
+                    {subtitle}
+                  </div>
                 )}
               </CardHeader>
               {description && (
                 <div
                   className={cn(
                     "mt-2 text-xs sm:text-sm list-disc overflow-hidden transition-all duration-700 ease-in-out text-muted-foreground",
-                    isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                    isExpanded ? "max-h-125 opacity-100" : "max-h-0 opacity-0"
                   )}
                 >
                   {description}
@@ -90,8 +90,8 @@ export const ResumeCard = ({
           </Card>
         </Link>
       ) : (
-        <Card className="flex border-none shadow-none bg-transparent p-2 -mx-2">
-          <div className="flex-grow items-center flex-col group mb-2">
+        <Card className="flex border-none shadow-none bg-transparent p-0 rounded-lg">
+          <div className="grow items-center flex-col group mb-2">
             <CardHeader className="p-0">
               <div className="flex items-center justify-between gap-x-2 text-base">
                 <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
@@ -114,7 +114,11 @@ export const ResumeCard = ({
                   {period}
                 </div>
               </div>
-              {subtitle && <div className="font-sans text-xs text-muted-foreground">{subtitle}</div>}
+              {subtitle && (
+                <div className="font-sans text-xs text-muted-foreground">
+                  {subtitle}
+                </div>
+              )}
             </CardHeader>
           </div>
         </Card>
