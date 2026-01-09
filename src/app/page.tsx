@@ -52,7 +52,7 @@ export default function Page() {
       </section>
       <section id="work">
         <h2 className="text-xl font-bold mb-2">Work Experience</h2>
-        <div className="flex min-h-0 flex-col gap-y-2">
+        <div className="flex min-h-0 flex-col gap-y-4">
           {DATA.work.map((work) => (
             <ResumeCard
               key={work.company}

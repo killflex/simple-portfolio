@@ -95,7 +95,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  manifest: "/site.webmanifest",
   alternates: {
     canonical: DATA.url,
   },

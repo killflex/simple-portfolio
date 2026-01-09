@@ -43,11 +43,7 @@ const ProjectCardComponent = ({
   className,
 }: Props) => {
   return (
-    <Card
-      className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full bg-background/50 backdrop-blur-[2px]"
-      }
-    >
+    <Card className={"flex flex-col overflow-hidden border"}>
       <Link
         href={href || "#"}
         className={cn("block cursor-pointer", className)}

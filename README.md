@@ -1,43 +1,42 @@
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+![Portfolio Preview](/public/mockup.png)
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+A minimalist, high-performance portfolio template built with modern web technologies. Designed for developers and designers to showcase their work and skills with zero clutter.
 
-# Features
+## Tech Stack
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- **Framework**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS, Shadcn UI, Magic UI
+- **Deployment**: Vercel
 
-# Getting Started Locally
+## Features
 
-1. Clone this repository to your local machine:
+- **Configuration**: Simple single-file setup via `src/data/resume.tsx`
+- **Performance**: Optimized for speed and SEO
+- **Design**: Clean, responsive, and accessible UI
+- **Theming**: Dark and light mode support
+
+## Getting Started
+
+1. Clone the repository
 
    ```bash
-   git clone https://github.com/dillionverma/portfolio
+   git clone https://github.com/killflex/simple-portfolio
    ```
 
-2. Move to the cloned directory
-
-   ```bash
-   cd portfolio
-   ```
-
-3. Install dependencies:
+2. Install dependencies
 
    ```bash
    pnpm install
    ```
 
-4. Start the local Server:
+3. Run development server
 
    ```bash
    pnpm dev
    ```
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+4. Customize content in `src/data/resume.tsx`
 
-# License
+## License
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+MIT License

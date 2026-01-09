@@ -79,11 +79,15 @@ const ResumeCardComponent = ({
               {description && (
                 <div
                   className={cn(
-                    "mt-2 text-xs sm:text-sm list-disc overflow-hidden transition-all duration-700 ease-in-out text-muted-foreground",
-                    isExpanded ? "max-h-125 opacity-100" : "max-h-0 opacity-0"
+                    "grid text-xs sm:text-sm text-muted-foreground transition-all duration-300 ease-in-out",
+                    isExpanded
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
                   )}
                 >
-                  {description}
+                  <div className="overflow-hidden">
+                    <div className="mt-2">{description}</div>
+                  </div>
                 </div>
               )}
             </div>
