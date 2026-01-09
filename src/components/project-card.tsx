@@ -9,7 +9,9 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { memo } from "react";
 import Markdown from "react-markdown";
+import { Button } from "./ui/button";
 
 interface Props {
   title: string;
@@ -17,7 +19,6 @@ interface Props {
   description: string;
   dates: string;
   tags: readonly string[];
-  link?: string;
   image?: string;
   video?: string;
   design?: string;
@@ -29,19 +30,18 @@ interface Props {
   className?: string;
 }
 
-export function ProjectCard({
+const ProjectCardComponent = ({
   title,
   href,
   description,
   dates,
   tags,
-  link,
   image,
   video,
   design,
   links,
   className,
-}: Props) {
+}: Props) => {
   return (
     <Card
       className={
@@ -84,23 +84,22 @@ export function ProjectCard({
       <CardHeader className="px-4 py-3">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base font-medium">{title}</CardTitle>
-          <time className="font-sans text-xs text-muted-foreground">{dates}</time>
-          <div className="hidden font-sans text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-          </div>
-          <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <time className="font-sans text-xs text-muted-foreground">
+            {dates}
+          </time>
+          <div className="line-clamp-2 max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
             <Markdown>{description}</Markdown>
           </div>
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-4">
         {tags && tags.length > 0 && (
-          <div className="mt-2 flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-2 py-0.5 text-[10px] rounded-full font-normal"
-                variant="secondary"
                 key={tag}
+                className="py-0.5 text-[10px] rounded-full"
+                variant="outline"
               >
                 {tag}
               </Badge>
@@ -111,17 +110,28 @@ export function ProjectCard({
       <CardFooter className="px-4 pb-3 pt-2">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
-            {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px] rounded-full">
+            {links?.map((link, index) => (
+              <Button
+                key={index}
+                variant="link"
+                className="gap-2 px-2 py-0 text-[10px] cursor-pointer"
+              >
+                <Link
+                  href={link?.href}
+                  key={index}
+                  target="_blank"
+                  className="flex flex-row justify-center items-center gap-2 p-0"
+                >
                   {link.icon}
                   {link.type}
-                </Badge>
-              </Link>
+                </Link>
+              </Button>
             ))}
           </div>
         )}
       </CardFooter>
     </Card>
   );
-}
+};
+
+export const ProjectCard = memo(ProjectCardComponent);

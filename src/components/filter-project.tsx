@@ -2,26 +2,32 @@
 import { ProjectCard } from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 const FilterProject = () => {
   const [activeCategory, setActiveCategory] = useState("Website");
 
-  const filteredData = DATA.projects.filter((item) =>
-    item.category.includes(activeCategory)
+  const filteredData = useMemo(
+    () =>
+      DATA.projects.filter((item) => item.category.includes(activeCategory)),
+    [activeCategory]
   );
+
+  const handleCategoryChange = useCallback((category: string) => {
+    setActiveCategory(category);
+  }, []);
 
   return (
     <div className="space-y-12 w-full py-4">
       {/* Filter Buttons */}
-      <div className="flex flex-row justify-center items-center max-w-200 space-x-2 mt-4">
+      <div className="flex flex-row justify-center items-center max-w-200 space-x-2 mb-6">
         {DATA.categories.map((category) => (
           <Button
             key={category}
             className="cursor-pointer"
             size="sm"
             variant={activeCategory === category ? "default" : "outline"}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => handleCategoryChange(category)}
           >
             {category}
           </Button>
@@ -29,7 +35,7 @@ const FilterProject = () => {
       </div>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto">
         {filteredData.length > 0 ? (
-          filteredData.map((project, id) => (
+          filteredData.map((project) => (
             <ProjectCard
               href={project.href}
               key={project.title}

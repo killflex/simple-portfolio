@@ -26,7 +26,7 @@ export default function Page() {
               <p className="max-w-150 md:text-xl text-muted-foreground">
                 {DATA.description}
               </p>
-              <Button size="sm" className="cursor-pointer">
+              <Button size="sm" variant="outline" className="cursor-pointer">
                 <Link
                   href={DATA.cvurl}
                   target="_blank"
@@ -53,7 +53,7 @@ export default function Page() {
       <section id="work">
         <h2 className="text-xl font-bold mb-2">Work Experience</h2>
         <div className="flex min-h-0 flex-col gap-y-2">
-          {DATA.work.map((work, id) => (
+          {DATA.work.map((work) => (
             <ResumeCard
               key={work.company}
               logoUrl={work.logoUrl}
@@ -72,7 +72,7 @@ export default function Page() {
       <section id="education">
         <h2 className="text-xl font-bold mb-2">Education</h2>
         <div className="flex min-h-0 flex-col gap-y-2">
-          {DATA.education.map((education, id) => (
+          {DATA.education.map((education) => (
             <ResumeCard
               key={education.school}
               href={education.href}
@@ -90,9 +90,13 @@ export default function Page() {
         <div className="flex flex-col space-y-6">
           <div className="">
             <h2 className="text-xl font-bold mb-2">Tech Stack</h2>
-            <div className="flex flex-wrap gap-2">
-              {DATA.skills.map((skill, id) => (
-                <Badge key={skill} variant="outline" className="px-2 py-1">
+            <div className="flex flex-wrap gap-x-1 gap-y-1.5">
+              {DATA.skills.map((skill) => (
+                <Badge
+                  key={skill}
+                  variant="outline"
+                  className="px-3 py-1 rounded-full"
+                >
                   {skill}
                 </Badge>
               ))}
@@ -100,9 +104,13 @@ export default function Page() {
           </div>
           <div className="">
             <h2 className="text-xl font-bold mb-2">Design Tools</h2>
-            <div className="flex flex-wrap gap-2">
-              {DATA.skills2.map((skill2, id) => (
-                <Badge key={skill2} variant="outline" className="px-2 py-1">
+            <div className="flex flex-wrap gap-x-1 gap-y-1.5">
+              {DATA.skills2.map((skill2) => (
+                <Badge
+                  key={skill2}
+                  variant="outline"
+                  className="px-3 py-1 rounded-full"
+                >
                   {skill2}
                 </Badge>
               ))}
@@ -141,7 +149,7 @@ export default function Page() {
               Feel free to reach out if you&apos;d like to chat.{" "}
               <Link
                 href={DATA.contact.social.email.url}
-                className="text-blue-500"
+                className="text-blue-500 hover:underline"
               >
                 Drop me an email with your questions
               </Link>{" "}
