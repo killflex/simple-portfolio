@@ -1,6 +1,5 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
@@ -40,25 +39,13 @@ const ResumeCardComponent = ({
     <div>
       {disabled ? (
         <Link href={href || "#"} className="block" onClick={handleClick}>
-          <Card className="flex border-none shadow-none bg-transparent hover:bg-accent/50 transition-colors duration-300 p-0 rounded-lg">
-            <div className="grow items-center flex-col group">
-              <CardHeader className="p-0">
+          <Card className="flex p-0 shadow-none bg-transparent border-none rounded-lg">
+            <div className="flex-col items-center grow group">
+              <CardHeader className="gap-y-1">
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                     {title}
-                    {badges && (
-                      <span className="inline-flex gap-x-1">
-                        {badges.map((badge, index) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs rounded-full px-2 py-0.5 font-normal"
-                            key={index}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    )}
+
                     <ChevronRightIcon
                       className={cn(
                         "size-4 translate-x-0 transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
@@ -66,20 +53,30 @@ const ResumeCardComponent = ({
                       )}
                     />
                   </h3>
-                  <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+                  <div className="text-xs sm:text-sm tabular-nums text-right">
                     {period}
                   </div>
                 </div>
                 {subtitle && (
-                  <div className="font-sans text-xs text-muted-foreground">
-                    {subtitle}
-                  </div>
+                  <div className="font-sans text-xs">{subtitle}</div>
+                )}
+                {badges && (
+                  <span className="flex flex-row flex-wrap gap-1">
+                    {badges.map((badge, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                      >
+                        {badge}
+                      </span>
+                    ))}
+                  </span>
                 )}
               </CardHeader>
               {description && (
                 <div
                   className={cn(
-                    "grid text-xs sm:text-sm text-muted-foreground transition-all duration-300 ease-in-out",
+                    "grid text-xs sm:text-sm transition-all duration-300 ease-in-out",
                     isExpanded
                       ? "grid-rows-[1fr] opacity-100"
                       : "grid-rows-[0fr] opacity-0"
@@ -101,28 +98,23 @@ const ResumeCardComponent = ({
                 <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                   {title}
                   {badges && (
-                    <span className="inline-flex gap-x-1">
+                    <span className="flex flex-row flex-wrap gap-1">
                       {badges.map((badge, index) => (
-                        <Badge
-                          variant="secondary"
-                          className="align-middle text-xs rounded-full px-2 py-0.5 font-normal"
+                        <span
                           key={index}
+                          className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                         >
                           {badge}
-                        </Badge>
+                        </span>
                       ))}
                     </span>
                   )}
                 </h3>
-                <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+                <div className="text-xs sm:text-sm tabular-nums text-right">
                   {period}
                 </div>
               </div>
-              {subtitle && (
-                <div className="font-sans text-xs text-muted-foreground">
-                  {subtitle}
-                </div>
-              )}
+              {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
             </CardHeader>
           </div>
         </Card>

@@ -19,7 +19,7 @@ export function ModeToggle() {
         name="mode-toggle"
         variant="ghost"
         type="button"
-        className="px-2 cursor-pointer"
+        className="px-2 cursor-pointer hover:bg-transparent"
         aria-label="Toggle theme"
       >
         <div className="h-[1.2rem] w-[1.2rem]" />
@@ -32,7 +32,7 @@ export function ModeToggle() {
       name="mode-toggle"
       variant="ghost"
       type="button"
-      className="px-2 cursor-pointer"
+      className="px-2 cursor-pointer hover:bg-transparent"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (

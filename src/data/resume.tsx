@@ -13,35 +13,39 @@ export const DATA = {
   cvurl:
     "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
-  avatarUrl:
-    "https://res.cloudinary.com/dn2tic45s/image/upload/v1767974272/candid-profile-picture_1_1_ojjvaq.jpg",
+  avatarUrl: "/avatar.webp",
   skills: [
+    "Typescript",
     "React.js",
     "Next.js",
-    "Typescript",
+    "Redux",
     "Tailwind CSS",
+    "Shadcn UI",
+    "Motion",
     "Node.js",
-    "Express",
+    "Express.js",
     "PHP",
     "Laravel",
-    "Python",
-    "MySQL",
     "PostgreSQL",
+    "MySQL",
     "MongoDB",
     "Docker",
+    "Linux",
+    "Git",
   ],
   skills2: [
-    "Figma",
     "After Effects",
     "Premiere Pro",
     "Photoshop",
     "Blender",
     "Cinema 4D",
+    "Redshift",
+    "Octane",
+    "Figma",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "ferryhasan10@gmail.com",
-    tel: "+6281214160006",
     social: {
       GitHub: {
         name: "GitHub",
@@ -83,10 +87,19 @@ export const DATA = {
     {
       company: "PT. iGS Indonesia Groups",
       href: "/",
-      badges: [],
+      badges: [
+        "Typescript",
+        "Next.js",
+        "Redux",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Motion",
+        "PostgreSQL",
+        "Docker",
+      ],
       location: "Hybrid",
       title: "Intern Full Stack Developer",
-      logoUrl: "/igs.png",
+      logoUrl: "",
       start: "Feb 2025",
       end: "Apr 2025",
       description: (
@@ -103,10 +116,16 @@ export const DATA = {
     {
       company: "Freelance / Self-Employed",
       href: "/",
-      badges: [],
+      badges: [
+        "After Effects",
+        "Premiere Pro",
+        "Photoshop",
+        "Cinema 4D",
+        "Blender",
+      ],
       location: "Freelance",
       title: "Freelance Motion Designer",
-      logoUrl: "/killflex.jpg",
+      logoUrl: "",
       start: "Mar 2019",
       end: "Nov 2023",
       description: (
@@ -132,10 +151,10 @@ export const DATA = {
     {
       company: "Sands Group Indonesia",
       href: "/",
-      badges: [],
+      badges: ["After Effects", "Premiere Pro", "Photoshop"],
       location: "Freelance",
       title: "Freelance Video Editor",
-      logoUrl: "/sands.jpg",
+      logoUrl: "",
       start: "Aug 2023",
       end: "Aug 2023",
       description: (
@@ -159,10 +178,18 @@ export const DATA = {
     {
       company: "CV. Natusi",
       href: "/",
-      badges: [],
+      badges: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "PHP",
+        "MySQL",
+        "Figma",
+        "Photoshop",
+      ],
       location: "Onsite",
       title: "Student Intern",
-      logoUrl: "/natusi.png",
+      logoUrl: "",
       start: "Jan 2021",
       end: "Jun 2021",
       description: (
@@ -191,7 +218,7 @@ export const DATA = {
       school: 'UPN "Veteran" Jawa Timur',
       href: "/",
       degree: "Bachelor's Degree of Informatics Engineering",
-      logoUrl: "/upn.png",
+      logoUrl: "",
       start: "2022",
       end: "Present",
     },
@@ -199,7 +226,7 @@ export const DATA = {
       school: "SMK Negeri 1 Dlanggu",
       href: "/",
       degree: "Senior High School of Software Engineering",
-      logoUrl: "/dlanggu.png",
+      logoUrl: "",
       start: "2019",
       end: "2022",
     },
@@ -212,7 +239,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "A sleek, single-page static landing page for a fictional data analytics service, focused on visual appeal.",
+        "A sleek, single-page static landing page for a fictional data analytics service.",
       technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "Framer", "Lenis"],
       category: "Website",
       links: [
@@ -238,19 +265,14 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "VGG-16 based CNN arch w/ 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
-      technologies: ["Kotlin", "Python", "Tensorflow"],
+        "VGG16 based CNN arch 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
+      technologies: ["Kotlin", "Python", "Tensorflow", "VGG16"],
       category: "Mobile",
       links: [
         {
           type: "Source",
           href: "https://github.com/killflex/melasma-kotlin",
           icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Article",
-          href: "https://docs.google.com/document/d/1oxGFg7w0IqBaPzeMeH32gxXmxCJakOWzV8fHtO1ESx0",
-          icon: <Icons.paper className="size-3" />,
         },
       ],
       image:
@@ -264,19 +286,14 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "VGG-16 based CNN arch w/ 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
-      technologies: ["Kotlin", "Python", "Tensorflow"],
+        "VGG16 based CNN arch 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
+      technologies: ["Kotlin", "Python", "Tensorflow", "VGG16"],
       category: "ML",
       links: [
         {
           type: "Source",
           href: "https://github.com/killflex/melasma-kotlin",
           icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Article",
-          href: "https://docs.google.com/document/d/1oxGFg7w0IqBaPzeMeH32gxXmxCJakOWzV8fHtO1ESx0",
-          icon: <Icons.paper className="size-3" />,
         },
       ],
       image:
@@ -290,7 +307,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "E-commerce coffee products with table  reservation and PayPal RESTs API payment gateway integration.",
+        "E-Commerce coffee products with table reservation and PayPal payment gateway.",
       technologies: ["Laravel 11", "Bootstrap 5", "MySQL", "Paypal"],
       category: "Website",
       links: [
@@ -311,7 +328,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Recommendation platform to find the nearest place to eat or hang out with complete information around the UPN Jatim",
+        "Recommendation platform to find the nearest place to eat or hang out around the UPN Jatim.",
       technologies: ["PHP", "Bootstrap 5", "MySQL"],
       category: "Website",
       links: [
@@ -332,8 +349,8 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Education based Bela Negara Indonesia mobile game, aiming to facilitate more interactive and effective learning.",
-      technologies: ["Construct 3", "Gradle", "Cordova 11"],
+        "Education based Bela Negara Indonesia mobile game, facilitate interactive learning.",
+      technologies: ["Construct 3", "Photoshop"],
       category: "Mobile",
       links: [
         {
@@ -353,8 +370,8 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Simple game to create a fun and challenging gaming experience with game mechanics similar to the original Flappy Bird.",
-      technologies: ["Construct 3", "Gradle"],
+        "Simple game to create challenging experience similar to the original Flappy Bird.",
+      technologies: ["Construct 3"],
       category: "Mobile",
       links: [
         {
@@ -374,7 +391,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Mimics the look and functionality of the Unipin to create an interactive replica featuring Stripe payment.",
+        "Mimics the look and functionality of the Unipin featuring Stripe payment.",
       technologies: ["PHP", "Bootstrap 5", "MySQL", "Stripe"],
       category: "Website",
       links: [
@@ -395,7 +412,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Showcases projects, skills, and contact information to potential clients in a professional and engaging manner.",
+        "Showcases digital information in a professional and engaging manner.",
       technologies: ["HTML", "CSS", "Javascript"],
       category: "Website",
       links: [
@@ -500,5 +517,4 @@ export const DATA = {
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741503512/cloudtrain_1_inawna.jpg",
     },
   ],
-  hackathons: [],
 } as const;

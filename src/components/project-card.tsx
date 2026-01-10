@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -77,32 +76,61 @@ const ProjectCardComponent = ({
           />
         )}
       </Link>
-      <CardHeader className="px-4 py-3">
-        <div className="space-y-1">
-          <CardTitle className="mt-1 text-base font-medium">{title}</CardTitle>
-          <time className="font-sans text-xs text-muted-foreground">
-            {dates}
-          </time>
-          <div className="line-clamp-2 max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            <Markdown>{description}</Markdown>
-          </div>
-        </div>
-      </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-4">
-        {tags && tags.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {tags?.map((tag) => (
-              <Badge
-                key={tag}
-                className="py-0.5 text-[10px] rounded-full"
-                variant="outline"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        )}
-      </CardContent>
+      {description ? (
+        <>
+          <CardHeader className="px-4 py-3">
+            <div className="space-y-1">
+              <CardTitle className="mt-1 text-base font-bold">
+                {title}
+              </CardTitle>
+              <time className="font-sans text-xs">{dates}</time>
+              <div className="line-clamp-2 max-w-full text-pretty text-xs">
+                <Markdown>{description}</Markdown>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent className="mt-auto flex flex-col px-4">
+            {tags && tags.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {tags?.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-flex items-center rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </CardContent>
+        </>
+      ) : (
+        <>
+          <CardHeader className="px-4 mt-3 mb-1.5">
+            <div className="space-y-1">
+              <CardTitle className="mt-1 text-base font-bold">
+                {title}
+              </CardTitle>
+              <time className="font-sans text-xs">{dates}</time>
+            </div>
+          </CardHeader>
+          <CardContent className="mt-auto flex flex-col px-4">
+            {tags && tags.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {tags?.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-flex items-center rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </CardContent>
+        </>
+      )}
+
       <CardFooter className="px-4 pb-3 pt-2">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
@@ -110,7 +138,7 @@ const ProjectCardComponent = ({
               <Button
                 key={index}
                 variant="link"
-                className="gap-2 px-2 py-0 text-[10px] cursor-pointer"
+                className="gap-2 px-2 py-0 text-xs cursor-pointer"
               >
                 <Link
                   href={link?.href}

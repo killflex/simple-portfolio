@@ -19,7 +19,6 @@ const FilterProject = () => {
 
   return (
     <div className="space-y-12 w-full py-4">
-      {/* Filter Buttons */}
       <div className="flex flex-row justify-center items-center max-w-200 space-x-2 mb-6">
         {DATA.categories.map((category) => (
           <Button

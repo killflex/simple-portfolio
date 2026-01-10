@@ -1,98 +1,288 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover-border: var(--popover-border);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent2);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-edge: var(--edge);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-destructive: var(--destructive);
+  --color-link: var(--link);
+  --color-code: var(--code);
+  --color-code-foreground: var(--code-foreground);
+  --color-code-number: var(--code-number);
+  --color-code-highlight: var(--code-highlight);
+  --color-selection: var(--selection);
+  --color-selection-foreground: var(--selection-foreground);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  /* white */
+  --background: oklch(1 0 0);
+
+  /* zinc-950 */
+  --foreground: oklch(0.141 0.005 285.823);
+
+  /* zinc-950 */
+  --primary: oklch(0.141 0.005 285.823);
+
+  /* zinc-50 */
+  --primary-foreground: oklch(0.985 0 0);
+
+  /* zinc-100 */
+  --secondary: oklch(0.967 0.001 286.375);
+
+  /* zinc-950 */
+  --secondary-foreground: oklch(0.141 0.005 285.823);
+
+  /* zinc-100 */
+  --muted: oklch(0.967 0.001 286.375);
+
+  /* zinc-500 */
+  --muted-foreground: oklch(0.552 0.016 285.938);
+
+  /* white */
+  --card: oklch(1 0 0);
+
+  /* zinc-950 */
+  --card-foreground: oklch(0.141 0.005 285.823);
+
+  /* white */
+  --popover: oklch(1 0 0);
+
+  /* zinc-950 */
+  --popover-foreground: oklch(0.141 0.005 285.823);
+
+  --popover-border: color-mix(in oklab, var(--color-black) 15%, transparent);
+
+  /* zinc-100 */
+  --accent: oklch(0.967 0.001 286.375);
+
+  --accent2: color-mix(in oklab, var(--accent) 50%, transparent);
+
+  /* zinc-900 */
+  --accent-foreground: oklch(0.21 0.006 285.885);
+
+  /* zinc-200 */
+  --border: oklch(0.92 0.004 286.32);
+
+  /* color-mix */
+  --edge: color-mix(in oklab, var(--border) 64%, var(--background));
+
+  /* zinc-200 */
+  --input: oklch(0.92 0.004 286.32);
+
+  /* zinc-400 */
+  --ring: oklch(0.705 0.015 286.067);
+
+  --info: oklch(0.67 0.17 244.98);
+
+  /* green-500 */
+  --success: oklch(0.723 0.219 149.579);
+
+  /* red-600 */
+  --destructive: oklch(0.577 0.245 27.325);
+
+  /* blue-700 */
+  --link: oklch(0.488 0.243 264.376);
+
+  /* zinc-50 */
+  --code: oklch(0.985 0 0);
+
+  /* zinc-950 */
+  --code-foreground: oklch(0.141 0.005 285.823);
+
+  /* zinc-400 */
+  --code-number: oklch(0.705 0.015 286.067);
+
+  --code-highlight: oklch(0.9584 0.0013 286.37);
+
+  /* zinc-950 */
+  --selection: oklch(0.141 0.005 285.823);
+
+  /* zinc-50 */
+  --selection-foreground: oklch(0.985 0 0);
+
+  --shadow-popover: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+  /* zinc-950 */
+  --background: oklch(0.141 0.005 285.823);
+
+  /* zinc-50 */
+  --foreground: oklch(0.985 0 0);
+
+  /* zinc-50 */
+  --primary: oklch(0.985 0 0);
+
+  /* zinc-950 */
+  --primary-foreground: oklch(0.141 0.005 285.823);
+
+  /* zinc-800 */
+  --secondary: oklch(0.274 0.006 286.033);
+
+  /* zinc-50 */
+  --secondary-foreground: oklch(0.985 0 0);
+
+  /* zinc-800 */
+  --muted: oklch(0.274 0.006 286.033);
+
+  /* zinc-400 */
+  --muted-foreground: oklch(0.705 0.015 286.067);
+
+  /* zinc-900 */
+  --card: oklch(0.21 0.006 285.885);
+
+  /* zinc-50 */
+  --card-foreground: oklch(0.985 0 0);
+
+  /* zinc-900 */
+  --popover: oklch(0.21 0.006 285.885);
+
+  /* zinc-50 */
+  --popover-foreground: oklch(0.985 0 0);
+
+  /* zinc-700 */
+  --popover-border: oklch(0.37 0.013 285.805);
+
+  /* zinc-800 */
+  --accent: oklch(0.274 0.006 286.033);
+
+  --accent2: color-mix(in oklab, var(--accent) 20%, transparent);
+
+  /* zinc-50 */
+  --accent-foreground: oklch(0.985 0 0);
+
+  /* zinc-800 */
+  --border: oklch(0.274 0.006 286.033);
+
+  --edge: color-mix(in oklab, var(--border) 64%, var(--background));
+
+  /* zinc-800 */
+  --input: oklch(0.274 0.006 286.033);
+
+  /* zinc-500 */
+  --ring: oklch(0.552 0.016 285.938);
+
+  /* green-500 */
+  --success: oklch(0.723 0.219 149.579);
+
+  /* red-700 */
+  --destructive: oklch(0.505 0.213 27.518);
+
+  /* blue-500 */
+  --link: oklch(0.623 0.214 259.815);
+
+  /* zinc-900 */
+  --code: oklch(0.21 0.006 285.885);
+
+  /* zinc-50 */
+  --code-foreground: oklch(0.985 0 0);
+
+  /* zinc-500 */
+  --code-number: oklch(0.552 0.016 285.938);
+
+  /* zinc-800 */
+  --code-highlight: oklch(0.274 0.006 286.033);
+
+  /* zinc-50 */
+  --selection: oklch(0.985 0 0);
+
+  /* zinc-950 */
+  --selection-foreground: oklch(0.141 0.005 285.823);
+
+  --shadow-popover: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 210 11.1% 3.53%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 210 11.1% 3.53%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 11.1% 3.53%;
-
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-
-    --radius: 0.5rem;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    @apply border-border outline-ring/50;
   }
 
-  .dark {
-    --background: 210 11.1% 3.53%;
-    --foreground: 0 0% 98%;
-
-    --card: 210 11.1% 3.53%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 210 11.1% 3.53%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-  }
-
-  * {
-    border-color: hsl(var(--border));
+  ::selection {
+    @apply bg-selection text-selection-foreground;
   }
 
   body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    @apply bg-background font-sans text-foreground antialiased;
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
   }
 
-  h3 code {
-    font-size: 1.125rem !important;
+  /* Custom scrollbar styling. Thanks @shadcn-ui */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 5px;
   }
 
-  @media (min-width: 768px) {
-    h3 code {
-      font-size: 1.25rem !important;
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .react-activity-calendar__tooltip {
+    width: max-content;
+    max-width: calc(100vw - 20px);
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+
+    /* See the `withArrow` setting. */
+    .react-activity-calendar__tooltip-arrow {
+      fill: hsl(0 0% 10%);
+    }
+
+    /* Use this instead of a media query - the component theme can be set */
+    /* independent of the system color scheme. */
+    &[data-color-scheme="dark"] {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(0, 0%, 0%);
+
+      .react-activity-calendar__tooltip-arrow {
+        fill: hsl(0, 0%, 100%);
+      }
     }
   }
+}
 
-  pre {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    border-radius: 0.5rem;
-    overflow-x: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+/* GitHub Calendar Instant Theme Switching */
+.github-calendar-wrapper {
+  transition: opacity 0.2s ease;
+}
 
-  pre [data-line] {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.dark .github-calendar-wrapper {
+  filter: invert(1) hue-rotate(180deg);
 }
