@@ -19,7 +19,11 @@ const FilterProject = () => {
 
   return (
     <div className="space-y-12 w-full py-4">
-      <div className="flex flex-row justify-center items-center max-w-200 space-x-2 mb-6">
+      <div
+        className="flex flex-row justify-center items-center max-w-200 space-x-2 mb-6"
+        role="tablist"
+        aria-label="Filter projects by category"
+      >
         {DATA.categories.map((category) => (
           <Button
             key={category}
@@ -27,12 +31,22 @@ const FilterProject = () => {
             size="sm"
             variant={activeCategory === category ? "default" : "outline"}
             onClick={() => handleCategoryChange(category)}
+            role="tab"
+            aria-selected={activeCategory === category}
+            aria-controls="projects-grid"
+            aria-label={`Filter by ${category}`}
           >
             {category}
           </Button>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto">
+      <div
+        id="projects-grid"
+        className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto"
+        role="tabpanel"
+        aria-label={`${activeCategory} projects`}
+        aria-live="polite"
+      >
         {filteredData.length > 0 ? (
           filteredData.map((project) => (
             <ProjectCard
@@ -49,7 +63,9 @@ const FilterProject = () => {
             />
           ))
         ) : (
-          <p className="">It&apos;s on my YouTube and Instagram atm.</p>
+          <p className="" role="status">
+            It&apos;s on my YouTube and Instagram atm.
+          </p>
         )}
       </div>
     </div>

@@ -36,9 +36,17 @@ const ResumeCardComponent = ({
   };
 
   return (
-    <div>
+    <div role="listitem">
       {disabled ? (
-        <Link href={href || "#"} className="block" onClick={handleClick}>
+        <Link
+          href={href || "#"}
+          className="block"
+          onClick={handleClick}
+          aria-expanded={isExpanded}
+          aria-label={`${title} - ${subtitle}. Click to ${
+            isExpanded ? "collapse" : "expand"
+          } details`}
+        >
           <Card className="flex p-0 shadow-none bg-transparent border-none rounded-lg">
             <div className="flex-col items-center grow group">
               <CardHeader className="gap-y-1">
@@ -51,6 +59,7 @@ const ResumeCardComponent = ({
                         "size-4 translate-x-0 transform transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
                         isExpanded ? "rotate-90" : "rotate-0"
                       )}
+                      aria-hidden="true"
                     />
                   </h3>
                   <div className="text-xs sm:text-sm tabular-nums text-right">
@@ -61,16 +70,21 @@ const ResumeCardComponent = ({
                   <div className="font-sans text-xs">{subtitle}</div>
                 )}
                 {badges && (
-                  <span className="flex flex-row flex-wrap gap-1">
+                  <div
+                    className="flex flex-row flex-wrap gap-1"
+                    role="list"
+                    aria-label="Technologies used"
+                  >
                     {badges.map((badge, index) => (
                       <span
                         key={index}
+                        role="listitem"
                         className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                       >
                         {badge}
                       </span>
                     ))}
-                  </span>
+                  </div>
                 )}
               </CardHeader>
               {description && (
@@ -81,6 +95,7 @@ const ResumeCardComponent = ({
                       ? "grid-rows-[1fr] opacity-100"
                       : "grid-rows-[0fr] opacity-0"
                   )}
+                  aria-hidden={!isExpanded}
                 >
                   <div className="overflow-hidden">
                     <div className="mt-2">{description}</div>
@@ -98,10 +113,15 @@ const ResumeCardComponent = ({
                 <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                   {title}
                   {badges && (
-                    <span className="flex flex-row flex-wrap gap-1">
+                    <span
+                      className="flex flex-row flex-wrap gap-1 ml-2"
+                      role="list"
+                      aria-label="Credentials"
+                    >
                       {badges.map((badge, index) => (
                         <span
                           key={index}
+                          role="listitem"
                           className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                         >
                           {badge}

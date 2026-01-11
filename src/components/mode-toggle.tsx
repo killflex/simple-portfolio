@@ -34,12 +34,17 @@ export function ModeToggle() {
       type="button"
       className="px-2 cursor-pointer hover:bg-transparent"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      aria-label={`Switch to ${
+        resolvedTheme === "dark" ? "light" : "dark"
+      } mode`}
+      aria-live="polite"
     >
       {resolvedTheme === "dark" ? (
-        <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
+        <MoonIcon className="h-[1.2rem] w-[1.2rem]" aria-hidden="true" />
       ) : (
-        <SunIcon className="h-[1.2rem] w-[1.2rem]" />
+        <SunIcon className="h-[1.2rem] w-[1.2rem]" aria-hidden="true" />
       )}
+      <span className="sr-only">Current theme: {resolvedTheme}</span>
     </Button>
   );
 }
