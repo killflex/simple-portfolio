@@ -124,7 +124,7 @@ export const DATA = {
         "Blender",
       ],
       location: "Freelance",
-      title: "Freelance Motion Designer",
+      title: "Motion Designer",
       logoUrl: "",
       start: "Mar 2019",
       end: "Nov 2023",

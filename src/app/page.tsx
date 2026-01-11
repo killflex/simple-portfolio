@@ -50,7 +50,7 @@ export default function Page() {
         <h2 className="text-xl font-bold mb-2">About</h2>
         <div className="flex flex-col max-w-full text-pretty font-sans text-sm gap-y-4">
           <Markdown>{DATA.summary}</Markdown>
-          <GithubContributions />
+          {/* <GithubContributions /> */}
         </div>
       </section>
       <section id="work">
