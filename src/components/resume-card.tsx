@@ -48,7 +48,7 @@ const ResumeCardComponent = ({
 
                     <ChevronRightIcon
                       className={cn(
-                        "size-4 translate-x-0 transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                        "size-4 translate-x-0 transform transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
                         isExpanded ? "rotate-90" : "rotate-0"
                       )}
                     />
@@ -76,7 +76,7 @@ const ResumeCardComponent = ({
               {description && (
                 <div
                   className={cn(
-                    "grid text-xs sm:text-sm transition-all duration-300 ease-in-out",
+                    "grid text-xs sm:text-sm transition-[opacity,grid-template-rows] duration-300 ease-in-out",
                     isExpanded
                       ? "grid-rows-[1fr] opacity-100"
                       : "grid-rows-[0fr] opacity-0"
