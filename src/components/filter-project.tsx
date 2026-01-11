@@ -57,6 +57,7 @@ const FilterProject = () => {
               dates={project.dates}
               tags={project.technologies}
               image={project.image}
+              image2={project.image2}
               video={project.video}
               design={project.design}
               links={project.links}

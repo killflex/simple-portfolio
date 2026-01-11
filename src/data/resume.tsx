@@ -234,6 +234,31 @@ export const DATA = {
   categories: ["Website", "Mobile", "ML", "Motion", "Design"],
   projects: [
     {
+      title: "Simple Portfolio",
+      href: "https://github.com/killflex/simple-portfolio",
+      dates: "",
+      active: true,
+      description: "A modern, simple, and high performance portfolio website.",
+      technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "Radix UI"],
+      category: "Website",
+      links: [
+        {
+          type: "Website",
+          href: "https://killflex.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/killflex/simple-portfolio",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/simple-portfolio-l.png",
+      image2: "/simple-portfolio-d.png",
+      video: "",
+      design: "",
+    },
+    {
       title: "Analytix SaaS",
       href: "https://github.com/killflex/analytix-practice",
       dates: "",
@@ -254,8 +279,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1745987244/analytix-1080_p3yzoo.png",
+      image: "/analytix-d.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -277,6 +302,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741454866/melasmadiagnosis_wf7zsi.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -298,27 +324,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741454866/melasmadiagnosis_wf7zsi.png",
-      video: "",
-      design: "",
-    },
-    {
-      title: "Coffee Blend",
-      href: "https://github.com/killflex/coffee-blend",
-      dates: "",
-      active: true,
-      description:
-        "E-Commerce coffee products with table reservation and PayPal payment gateway.",
-      technologies: ["Laravel 11", "Bootstrap 5", "MySQL", "Paypal"],
-      category: "Website",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/killflex/coffee-blend",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741434045/coffeeblend_qywu0o.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -338,8 +344,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741427045/njajanupn_dexlza.png",
+      image: "/njajanupn.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -361,6 +367,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741455990/edulaga_fku2ag.jpg",
+      image2: "",
       video: "",
       design: "",
     },
@@ -382,6 +389,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741428067/flappybirdc3_nv1msm.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -403,6 +411,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741427791/unipinparody_ej0guc.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -429,6 +438,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741426992/portfoliolama_umrmyd.png",
+      image2: "",
       video: "",
       design: "",
     },
@@ -442,6 +452,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741504380/landscapefila_ppupwt.png",
@@ -456,6 +467,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741497487/test_landscape_00000_njrkgx.jpg",
@@ -470,6 +482,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741500789/TAKE_OUT_itu8yo.jpg",
@@ -484,6 +497,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741504237/portah_bo2_4K_fbnc81.jpg",
@@ -498,6 +512,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741500789/train_octane_e1xm6f.jpg",
@@ -512,6 +527,7 @@ export const DATA = {
       category: "Design",
       links: [],
       image: "",
+      image2: "",
       video: "",
       design:
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741503512/cloudtrain_1_inawna.jpg",

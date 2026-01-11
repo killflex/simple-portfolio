@@ -19,6 +19,7 @@ interface Props {
   dates: string;
   tags: readonly string[];
   image?: string;
+  image2?: string;
   video?: string;
   design?: string;
   links?: readonly {
@@ -36,11 +37,14 @@ const ProjectCardComponent = ({
   dates,
   tags,
   image,
+  image2,
   video,
   design,
   links,
   className,
 }: Props) => {
+  const uniqueImage1 = `${image}?v=${Date.now()}`;
+  const uniqueImage2 = `${image2}?v=${Date.now()}`;
   return (
     <Card
       className={"flex flex-col overflow-hidden border"}
@@ -49,6 +53,7 @@ const ProjectCardComponent = ({
     >
       <Link
         href={href || "#"}
+        target="_blank"
         className={cn("block cursor-pointer", className)}
         aria-label={`View ${title} project details`}
       >
@@ -64,21 +69,32 @@ const ProjectCardComponent = ({
           />
         )}
         {image && (
-          <Image
-            src={image}
-            alt={`${title} project screenshot`}
-            width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+          <div className="relative w-full aspect-video overflow-hidden group">
+            <Image
+              src={image}
+              alt={`${image} project screenshot`}
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
+            {image2 && (
+              <Image
+                src={image2}
+                alt={`${image2} project screenshot (alternate view)`}
+                width={1920}
+                height={1080}
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:scale-110"
+              />
+            )}
+          </div>
         )}
         {design && (
           <Image
             src={design}
             alt={`${title} project design`}
-            width={500}
+            width={300}
             height={300}
-            className="h-72 w-full overflow-hidden object-cover object-center"
+            className="h-75 w-full aspect-square object-cover object-center"
           />
         )}
       </Link>
