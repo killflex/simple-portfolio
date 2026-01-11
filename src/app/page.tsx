@@ -186,7 +186,7 @@ export default function Page() {
               Feel free to reach out if you&apos;d like to chat.{" "}
               <Link
                 href={DATA.contact.social.email.url}
-                className="text-blue-500 hover:underline"
+                className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 aria-label="Send email to Ferry Hasan"
               >
                 Drop me an email with your questions
