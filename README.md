@@ -1,4 +1,4 @@
-![Portfolio Preview](/public/simple-portfolio-l.png)
+![Portfolio Preview](/public/projects/simple-portfolio-l.png)
 
 A minimalist, high-performance portfolio template built with modern web technologies. Designed for developers and designers to showcase their work and skills with zero clutter.
 
