@@ -30,9 +30,9 @@ export default function SocialLinks() {
           </div>
 
           <div className="flex-1 min-w-0">
-            <h3 className="flex items-center text-xs sm:text-sm font-medium underline-offset-2 group-hover/link:underline truncate">
+            <p className="flex items-center text-xs sm:text-sm font-medium underline-offset-2 group-hover/link:underline truncate">
               {social.name}
-            </h3>
+            </p>
 
             <p className="text-xs text-muted-foreground truncate">
               {social.description}

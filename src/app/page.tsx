@@ -59,7 +59,10 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section aria-labelledby="socials-heading">
+      <section id="socials" aria-labelledby="socials-heading">
+        <h2 id="socials-heading" className="sr-only">
+          Connect with me
+        </h2>
         <div className="grid grid-cols-2 gap-4">
           <SocialLinks />
         </div>
@@ -159,7 +162,10 @@ export default function Page() {
             <div className="inline-block px-3 py-1 text-sm font-medium">
               My Projects
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            <h2
+              id="projects-heading"
+              className="text-3xl font-bold tracking-tight sm:text-5xl"
+            >
               Check out my latest work
             </h2>
             <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
