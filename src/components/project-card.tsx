@@ -72,30 +72,34 @@ const ProjectCardComponent = ({
           <div className="relative w-full aspect-video overflow-hidden group">
             <Image
               src={image}
-              alt={`${image} project screenshot`}
+              alt={`${title} project screenshot`}
               width={1920}
               height={1080}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
               className="w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-110"
             />
             {image2 && (
               <Image
                 src={image2}
-                alt={`${image2} project screenshot (alternate view)`}
+                alt={`${title} project screenshot (alternate view)`}
                 width={1920}
                 height={1080}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
                 className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:scale-110"
               />
             )}
           </div>
         )}
         {design && (
-          <Image
-            src={design}
-            alt={`${title} project design`}
-            width={300}
-            height={300}
-            className="h-75 w-full aspect-square object-cover object-center"
-          />
+          <div className="relative w-full aspect-square overflow-hidden">
+            <Image
+              src={design}
+              alt={`${title} project design`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+              className="object-cover object-center"
+            />
+          </div>
         )}
       </Link>
       {description ? (

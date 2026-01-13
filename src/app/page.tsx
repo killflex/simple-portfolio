@@ -1,5 +1,5 @@
 import FilterProject from "@/components/filter-project";
-import GithubContributions from "@/components/github-contributions";
+import SocialLinks from "@/components/social-links";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -59,13 +59,17 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section aria-labelledby="socials-heading">
+        <div className="grid grid-cols-2 gap-4">
+          <SocialLinks />
+        </div>
+      </section>
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading" className="text-xl font-bold mb-2">
           About
         </h2>
         <div className="flex flex-col max-w-full text-pretty font-sans text-sm gap-y-4">
           <Markdown>{DATA.summary}</Markdown>
-          {/* <GithubContributions /> */}
         </div>
       </section>
       <section id="work" aria-labelledby="work-heading">
@@ -185,7 +189,7 @@ export default function Page() {
             <p className="mx-auto max-w-150 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Feel free to reach out if you&apos;d like to chat.{" "}
               <Link
-                href={DATA.contact.social.email.url}
+                href={DATA.contact.emailUrl}
                 className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 aria-label="Send email to Ferry Hasan"
               >

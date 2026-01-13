@@ -22,7 +22,7 @@ export default function Navbar() {
         aria-hidden="true"
       ></div>
       <Dock className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background/70 backdrop-blur-2xl border border-white/10 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-full">
-        {/* {DATA.navbar.map((item) => (
+        {DATA.navbar.map((item) => (
           <DockIcon key={item.href}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -31,10 +31,10 @@ export default function Navbar() {
                   href={item.href}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "sm" }),
-                    "size-12"
+                    "size-12 hover:bg-transparent"
                   )}
                 >
-                  <item.icon className="size-4" />
+                  <item.icon className="size-4" aria-hidden="true" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -43,8 +43,12 @@ export default function Navbar() {
             </Tooltip>
           </DockIcon>
         ))}
-        <Separator orientation="vertical" className="h-full" /> */}
-        {Object.entries(DATA.contact.social)
+        {/* <Separator
+          orientation="vertical"
+          className="h-full"
+          aria-hidden="true"
+        /> */}
+        {/* {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)
           .map(([name, social]) => (
             <DockIcon key={name}>
@@ -68,12 +72,12 @@ export default function Navbar() {
                 </TooltipContent>
               </Tooltip>
             </DockIcon>
-          ))}
-        <Separator
+          ))} */}
+        {/* <Separator
           orientation="vertical"
           className="h-full py-2"
           aria-hidden="true"
-        />
+        /> */}
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>

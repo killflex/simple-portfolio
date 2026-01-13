@@ -1,11 +1,11 @@
-![Portfolio Preview](/public/mockup.png)
+![Portfolio Preview](/public/simple-portfolio-l.png)
 
 A minimalist, high-performance portfolio template built with modern web technologies. Designed for developers and designers to showcase their work and skills with zero clutter.
 
 ## Tech Stack
 
 - **Framework**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS, Shadcn UI, Magic UI
+- **Styling**: Tailwind CSS, Shadcn UI, Radix UI
 - **Deployment**: Vercel
 
 ## Features

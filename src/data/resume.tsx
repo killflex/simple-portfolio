@@ -13,7 +13,7 @@ export const DATA = {
   cvurl:
     "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
-  avatarUrl: "/avatar.webp",
+  avatarUrl: "/avatars/avatar.webp",
   skills: [
     "Typescript",
     "React.js",
@@ -46,39 +46,55 @@ export const DATA = {
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "ferryhasan10@gmail.com",
+    emailUrl: "mailto:ferryhasan10@gmail.com",
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/killflex",
         icon: Icons.github,
-
+        iconWebp: "/social-icons/github.webp",
+        description: "@killflex",
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/ferry-hasan",
         icon: Icons.linkedin,
-
+        iconWebp: "/social-icons/linkedin.webp",
+        description: "@ferry-hasan",
         navbar: true,
       },
       Instagram: {
         name: "Instagram",
         url: "https://www.instagram.com/killflex",
         icon: Icons.instagram,
+        iconWebp: "/social-icons/instagram.webp",
+        description: "@killflex",
+        navbar: true,
+      },
+      InstagramPersonal: {
+        name: "Instagram",
+        url: "https://www.instagram.com/tyvwel",
+        icon: Icons.instagram,
+        iconWebp: "/social-icons/instagram.webp",
+        description: "@tyvwel (personal)",
+        navbar: true,
+      },
+      Twitter: {
+        name: "Twitter",
+        url: "https://x.com/fleksipi",
+        icon: Icons.youtube,
+        iconWebp: "/social-icons/x.webp",
+        description: "@fleksipi",
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
         url: "https://www.youtube.com/@killflex",
         icon: Icons.youtube,
+        iconWebp: "/social-icons/youtube.webp",
+        description: "@killflex",
         navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "mailto:ferryhasan10@gmail.com",
-        icon: Icons.email,
-
-        navbar: false,
       },
     },
   },
@@ -239,7 +255,7 @@ export const DATA = {
       dates: "",
       active: true,
       description: "A modern, simple, and high performance portfolio website.",
-      technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "Radix UI"],
+      technologies: ["Typescript", "Next.js", "Tailwind CSS", "Shadcn UI"],
       category: "Website",
       links: [
         {
@@ -253,8 +269,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/simple-portfolio-l.png",
-      image2: "/simple-portfolio-d.png",
+      image: "/projects/simple-portfolio-l.png",
+      image2: "/projects/simple-portfolio-d.png",
       video: "",
       design: "",
     },
@@ -265,7 +281,14 @@ export const DATA = {
       active: true,
       description:
         "A sleek, single-page static landing page for a fictional data analytics service.",
-      technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "Framer", "Lenis"],
+      technologies: [
+        "Javascript",
+        "React.js",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Motion",
+        "Lenis",
+      ],
       category: "Website",
       links: [
         {
@@ -279,7 +302,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/analytix-d.png",
+      image: "/projects/analytix-d.png",
       image2: "",
       video: "",
       design: "",
@@ -335,7 +358,7 @@ export const DATA = {
       active: true,
       description:
         "Recommendation platform to find the nearest place to eat or hang out around the UPN Jatim.",
-      technologies: ["PHP", "Bootstrap 5", "MySQL"],
+      technologies: ["PHP", "Javascript", "CSS", "Bootstrap 5", "MySQL"],
       category: "Website",
       links: [
         {
@@ -344,7 +367,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/njajanupn.png",
+      image: "/projects/njajanupn.png",
       image2: "",
       video: "",
       design: "",
@@ -400,7 +423,14 @@ export const DATA = {
       active: true,
       description:
         "Mimics the look and functionality of the Unipin featuring Stripe payment.",
-      technologies: ["PHP", "Bootstrap 5", "MySQL", "Stripe"],
+      technologies: [
+        "PHP",
+        "Javascript",
+        "CSS",
+        "Bootstrap 5",
+        "MySQL",
+        "Stripe",
+      ],
       category: "Website",
       links: [
         {
@@ -422,7 +452,7 @@ export const DATA = {
       active: true,
       description:
         "Showcases digital information in a professional and engaging manner.",
-      technologies: ["HTML", "CSS", "Javascript"],
+      technologies: ["HTML", "Javascript", "CSS"],
       category: "Website",
       links: [
         {

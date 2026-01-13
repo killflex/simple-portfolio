@@ -31,6 +31,15 @@ const AvatarImage = React.forwardRef<
   const [isLoading, setIsLoading] = React.useState(true);
   const [hasError, setHasError] = React.useState(false);
 
+  // Memoize handlers to prevent re-renders
+  const handleLoad = React.useCallback(() => {
+    setIsLoading(false);
+  }, []);
+
+  const handleError = React.useCallback(() => {
+    setHasError(true);
+  }, []);
+
   if (!src || hasError) {
     return null;
   }
@@ -46,13 +55,13 @@ const AvatarImage = React.forwardRef<
         alt={alt}
         fill
         sizes="128px"
+        priority
         className={cn(
-          "object-cover transition-opacity duration-300",
+          "object-cover transition-opacity duration-75 ease-out",
           isLoading ? "opacity-0" : "opacity-100"
         )}
-        loading="lazy"
-        onLoad={() => setIsLoading(false)}
-        onError={() => setHasError(true)}
+        onLoad={handleLoad}
+        onError={handleError}
       />
     </div>
   );

@@ -20,7 +20,7 @@ const FilterProject = () => {
   return (
     <div className="space-y-12 w-full py-4">
       <div
-        className="flex flex-row justify-center items-center max-w-200 space-x-2 mb-6"
+        className="flex flex-row flex-wrap justify-center items-center max-w-200 gap-2 mb-6"
         role="tablist"
         aria-label="Filter projects by category"
       >
