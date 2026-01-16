@@ -9,7 +9,7 @@ export default function SocialLinks() {
       {Object.values(DATA.contact.social).map((social) => (
         <Link
           key={social.url}
-          className="group/link flex cursor-pointer items-center gap-4 sm:gap-6 py-2 pr-2 hover:bg-accent2 rounded-lg"
+          className="group/link flex cursor-pointer items-center gap-4 sm:gap-6 py-2 pr-2 rounded-lg"
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
