@@ -2,10 +2,22 @@
 
 A minimalist, high-performance portfolio template built with modern web technologies. Designed for developers and designers to showcase their work and skills with zero clutter.
 
+## Performance
+
+![Lighthouse Test Results](/public/projects/test-lighthouse.png)
+![GTmetrix Test Results](/public/projects/test-gtmetrix.png)
+
+Achieves excellent scores across all key metrics:
+
+- **Performance**: Optimized images, lazy loading, and efficient code splitting
+- **Accessibility**: WCAG 2.1 compliant, semantic HTML, proper ARIA labels
+- **Best Practices**: Modern web standards, secure connections
+- **SEO**: Proper meta tags, structured data, and semantic markup
+
 ## Tech Stack
 
 - **Framework**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS, Shadcn UI, Radix UI
+- **Styling**: Tailwind CSS, Shadcn UI
 - **Deployment**: Vercel
 
 ## Features
