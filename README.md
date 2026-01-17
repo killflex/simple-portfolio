@@ -1,4 +1,15 @@
+![Next.js](https://img.shields.io/badge/Next.js-16.1.1-black?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript&logoColor=white)
+![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=flat&logo=lighthouse&logoColor=white)
+![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-100%2F100-success?style=flat&logo=lighthouse&logoColor=white)
+![Lighthouse Best Practices](https://img.shields.io/badge/Best%20Practices-100%2F100-success?style=flat&logo=lighthouse&logoColor=white)
+![Lighthouse SEO](https://img.shields.io/badge/SEO-100%2F100-success?style=flat&logo=lighthouse&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat&logo=vercel&logoColor=white)
+
 ![Portfolio Preview](/public/projects/simple-portfolio-l.png)
+
+# Simple Portfolio
 
 A minimalist, high-performance portfolio template built with modern web technologies. Designed for developers and designers to showcase their work and skills with zero clutter.
 
@@ -48,7 +59,3 @@ Achieves excellent scores across all key metrics:
    ```
 
 4. Customize content in `src/data/resume.tsx`
-
-## License
-
-MIT License
