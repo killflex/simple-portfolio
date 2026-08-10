@@ -7,30 +7,53 @@ export const DATA = {
   url: "https://killflex.vercel.app",
   location: "Surabaya, Indonesia",
   locationLink: "https://www.google.com/maps/place/surabaya",
-  description: "Full Stack Developer and Motion Designer",
+  description: "Full Stack Developer & Motion Designer",
   summary:
-    "Passionate in developing dynamic, scalable web applications, and designing engaging motion designs. Proficient in full-stack development, including responsive UI design, API integration, and database management with expertise using React.js, Next.js, and Laravel.",
+    "I'm a Full-Stack Developer and Motion Designer based in Surabaya, Indonesia. A rare combination of someone who can both build the product and make it look compelling.\n\nOn the development side, I build fast, scalable web applications with React.js, Next.js, and Laravel with a focus on performance, clean architecture, and real-world deployment. On the creative side, I've spent years crafting motion graphics, video edits, and 3D visuals for clients across industries.\n\nWhat makes me different? I don't just execute tasks, I understand the full picture from database schema to deployment pipeline, and from storyboard to final render. That overlap between technical precision and visual thinking is where I do my best work.\n\nCurrently open to Full-Stack, Frontend, Backend, Video Editor, Motion Designer, and 3D Artist roles.",
+  cv: {
+    fullstack: {
+      title: "CV Full Stack Developer",
+      badge: "Engineering",
+      description:
+        "React, Next.js, TypeScript, Laravel, Node.js, PostgreSQL, Docker & REST APIs",
+      url: "https://drive.google.com/file/d/10CsRUCcrdud9-3EdtgEH0b8Cfk_JtU-C/view?usp=sharing",
+    },
+    designer: {
+      title: "CV Motion & 3D Designer",
+      badge: "Creative & 3D",
+      description:
+        "Motion Graphics, 3D Art, Video Editing, Blender, Cinema 4D, Octane & After Effects",
+      url: "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
+    },
+  },
   cvurl:
     "https://drive.google.com/file/d/108I-XFVnvxsCSbhWh6f11v1-DZod8nNI/view?usp=sharing",
   cvdownload: <Icons.download />,
+  certificationsFolderUrl:
+    "https://drive.google.com/drive/folders/1SAa-YFLiVS0aXg0SVBgtrJ4wRgp_XanP?usp=sharing",
   avatarUrl: "/avatars/avatar.webp",
   skills: [
-    "Typescript",
-    "React.js",
+    "PHP",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "React",
     "Next.js",
     "Redux",
     "Tailwind CSS",
     "Framer Motion",
-    "Node.js",
-    "Express.js",
-    "PHP",
     "Laravel",
+    "Node.js",
+    "RESTful API",
+    "Prisma",
+    "Drizzle",
     "PostgreSQL",
     "MySQL",
     "MongoDB",
     "Docker",
-    "Linux",
     "Git",
+    "GitHub Actions",
+    "Linux",
   ],
   skills2: [
     "After Effects",
@@ -63,30 +86,30 @@ export const DATA = {
         description: "@ferry-hasan",
         navbar: true,
       },
+      // Instagram: {
+      //   name: "Instagram",
+      //   url: "https://www.instagram.com/killflex",
+      //   icon: Icons.instagram,
+      //   iconWebp: "/social-icons/ig-w-tr.webp",
+      //   description: "@killflex",
+      //   navbar: true,
+      // },
       Instagram: {
         name: "Instagram",
-        url: "https://www.instagram.com/killflex",
+        url: "https://www.instagram.com/tyvwel",
         icon: Icons.instagram,
         iconWebp: "/social-icons/ig-w-tr.webp",
-        description: "@killflex",
+        description: "@tyvwel (personal)",
         navbar: true,
       },
-      // InstagramPersonal: {
-      //   name: "Instagram",
-      //   url: "https://www.instagram.com/tyvwel",
-      //   icon: Icons.instagram,
-      //   iconWebp: "/social-icons/instagram.webp",
-      //   description: "@tyvwel (personal)",
-      //   navbar: true,
-      // },
-      // Twitter: {
-      //   name: "Twitter",
-      //   url: "https://x.com/fleksipi",
-      //   icon: Icons.youtube,
-      //   iconWebp: "/social-icons/x.webp",
-      //   description: "@fleksipi",
-      //   navbar: true,
-      // },
+      Twitter: {
+        name: "Twitter",
+        url: "https://x.com/iamkillflex",
+        icon: Icons.x,
+        iconWebp: "/social-icons/x.webp",
+        description: "@iamkillflex",
+        navbar: true,
+      },
       Youtube: {
         name: "Youtube",
         url: "https://www.youtube.com/@killflex",
@@ -100,66 +123,83 @@ export const DATA = {
 
   work: [
     {
-      company: "PT. iGS Indonesia Groups",
-      href: "/",
+      company: "PT. IGS Indonesia Groups",
+      href: "",
       badges: [
-        "Typescript",
         "Next.js",
+        "Typescript",
         "Redux",
         "Tailwind CSS",
-        "Shadcn UI",
-        "Framer Motion",
         "PostgreSQL",
         "Drizzle",
         "Docker",
       ],
       location: "Hybrid",
-      title: "Intern Full Stack Developer",
+      title: "Full Stack Developer Intern",
       logoUrl: "",
       start: "Feb 2025",
       end: "Apr 2025",
       description: (
         <ul className="ml-1">
           <li>
-            &#x2022; Developed a dynamic company profile website for PT. APIGS.
+            &#x2022; Architected the full application from scratch using
+            Next.js, TypeScript, Redux, Tailwind CSS, Framer Motion, PostgreSQL,
+            and Drizzle ORM.
           </li>
-          <li>&#x2022; Handled modern and user-friendly UI/UX design.</li>
-          <li>&#x2022; Built scalable front-end and back-end development.</li>
-          <li>&#x2022; Managed deployment to ensure seamless accessibility.</li>
+          <li>
+            &#x2022; Achieved Lighthouse scores of 94 (Performance), 94
+            (Accessibility), 100 (Best Practices), and 100 (SEO), with a 1.2s
+            Largest Contentful Paint. Measured on production.
+          </li>
+          <li>
+            &#x2022; Implemented SSR and SSG rendering strategies with
+            structured metadata to improve TTFB, FCP, and SEO discoverability
+            across desktop and mobile.
+          </li>
+          <li>
+            &#x2022; Containerized the full stack with Docker and managed
+            deployment via Dokploy, maintaining 99.9% uptime with zero-downtime
+            deployments.
+          </li>
         </ul>
       ),
     },
     {
-      company: "Freelance / Self-Employed",
+      company: "Freelance",
       href: "/",
       badges: [
         "After Effects",
         "Premiere Pro",
         "Photoshop",
-        "Cinema 4D",
         "Blender",
+        "Cinema 4D",
       ],
-      location: "Freelance",
-      title: "Motion Designer",
+      location: "Remote",
+      title: "3D Motion Designer & Video Editor",
       logoUrl: "",
       start: "Mar 2019",
       end: "Nov 2023",
       description: (
         <ul className="ml-1">
           <li>
-            &#x2022; Created 100+ designs, growing 2K+ followers on Instagram
-            and 1.5K+ on YouTube.
+            &#x2022; Produced 100+ motion design and video editing works for
+            clients across industries, from logistics and e-commerce to music
+            artists, VTubers, and content creators.
           </li>
           <li>
-            &#x2022; Sold editing assets, generating over $1K in revenue within
-            a year.
+            &#x2022; Grew an organic audience of 2,000+ Instagram followers and
+            1,500+ YouTube subscribers within a year, driven entirely by
+            portfolio content.
           </li>
           <li>
-            &#x2022; Delivered on time, achieving 100% client satisfaction rate.
+            &#x2022; Developed and sold editing assets and project files
+            independently, generating over $1,000 in revenue within a year.
           </li>
           <li>
-            &#x2022; Collaborated with notable clients, JNT Cargo, Sands Group,
-            VTubers, influencers, etc.
+            &#x2022; Maintained a 100% client satisfaction rate across all
+            delivered projects, working with notable clients including JNT
+            Cargo, Sands Group, and various international VTubers and
+            influencers.
           </li>
         </ul>
       ),
@@ -176,17 +216,17 @@ export const DATA = {
       description: (
         <ul className="ml-1">
           <li>
-            &#x2022; Edited a high-quality short film that effectively conveyed
-            the company&apos;s message.
+            &#x2022; Edited a short film for a corporate client, delivering a
+            polished final cut that aligned with the company's brand identity
+            and messaging.
           </li>
           <li>
-            &#x2022; Enhanced visual storytelling to create a compelling
-            narrative.
+            &#x2022; Applied narrative editing techniques to build a compelling
+            visual story, from raw footage to finished film.
           </li>
-          <li>&#x2022; Ensured a polished and professional final product.</li>
           <li>
-            &#x2022; Supported the company&apos;s branding efforts through
-            impactful visuals.
+            &#x2022; Project scope and specific deliverables are kept
+            confidential per the terms of the work agreement.
           </li>
         </ul>
       ),
@@ -194,36 +234,29 @@ export const DATA = {
     {
       company: "CV. Natusi",
       href: "/",
-      badges: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "PHP",
-        "MySQL",
-        "Figma",
-        "Photoshop",
-      ],
+      badges: ["PHP", "JavaScript", "MySQL", "AdminLTE", "Figma", "Photoshop"],
       location: "Onsite",
-      title: "Student Intern",
+      title: "Web Developer Intern",
       logoUrl: "",
       start: "Jan 2021",
       end: "Jun 2021",
       description: (
         <ul className="ml-1">
           <li>
-            &#x2022; Developed a payroll website system automating salary
-            calculations.
+            &#x2022; Built a payroll web application automating 5 salary
+            components (base salary, overtime, bonuses, allowances, and PPh 21
+            tax calculation), reducing manual calculation steps by an estimated
+            70%.
           </li>
           <li>
-            &#x2022; Designed UI/UX for the Sentra Pelayanan Kepolisian Terpadu
-            (SPKT) website.
+            &#x2022; Designed 3 UI/UX prototypes in Figma (news portal,
+            law-enforcement complaint page, mobile golf app). All approved by
+            stakeholders on the first design cycle with 100% client sign-off.
           </li>
           <li>
-            &#x2022; Led the UI/UX team for the Tribrata News East Java website.
-          </li>
-          <li>
-            &#x2022; Handled OS, software, and network configurations to
-            optimize operations.
+            &#x2022; Collaborated with system analysts on structured weekly
+            design reviews, and supported IT infrastructure tasks including
+            router configuration, LAN cabling, and CCTV installation.
           </li>
         </ul>
       ),
@@ -233,63 +266,265 @@ export const DATA = {
     {
       school: 'UPN "Veteran" Jawa Timur',
       href: "/",
-      degree: "Bachelor's Degree of Informatics Engineering",
+      degree: "Bachelor of Computer Science in Informatics",
       logoUrl: "",
       start: "2022",
-      end: "Present",
+      end: "2026",
     },
     {
       school: "SMK Negeri 1 Dlanggu",
       href: "/",
-      degree: "Senior High School of Software Engineering",
+      degree: "Vocational High School in Software Engineering",
       logoUrl: "",
       start: "2019",
       end: "2022",
     },
   ],
-  categories: ["Website", "Mobile", "ML", "Motion", "Design"],
+  categories: ["Web App", "Mobile App", "Machine Learning", "Motion", "Design"],
+  featuredProject: {
+    title: "PT. APIGS — Dynamic Corporate Platform",
+    company: "PT. IGS Indonesia Groups",
+    role: "Full Stack Developer Intern",
+    period: "Feb 2025 - Apr 2025",
+    description:
+      "Engineered and deployed a dynamic, high-performance corporate web platform for PT. APIGS. Handled end-to-end execution from modern UI/UX design and responsive front-end development to scalable PostgreSQL database architecture and Dockerized deployment.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Docker",
+      "Framer Motion",
+      "Shadcn UI",
+    ],
+    metrics: [
+      {
+        value: "100%",
+        label: "Lighthouse Score",
+        highlight: "Performance & Best Practices",
+      },
+      {
+        value: "< 0.8s",
+        label: "Fast Load Time",
+        highlight: "First Contentful Paint",
+      },
+      {
+        value: "Grade A",
+        label: "GTmetrix Rating",
+        highlight: "Optimized Asset Delivery",
+      },
+      {
+        value: "100%",
+        label: "Responsive & SEO",
+        highlight: "Dynamic Server Components",
+      },
+    ],
+    image: "/projects/test-lighthouse.png",
+    image2: "/projects/test-gtmetrix.png",
+    links: [
+      {
+        type: "Lighthouse Report",
+        href: "/projects/test-lighthouse.png",
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: "GTmetrix Report",
+        href: "/projects/test-gtmetrix.png",
+        icon: <Icons.globe className="size-3" />,
+      },
+    ],
+  },
+  certifications: [
+    {
+      title: "Pemrograman JavaScript untuk Pemula sampai Mahir",
+      issuer: "Programmer Zaman Now",
+      date: "2026",
+      href: "https://drive.google.com/file/d/1o-f1Xs-IwY59Cl9Z1KSPJDgBIA5Cwy0q/view?usp=sharing",
+      badge: "Advanced JavaScript",
+    },
+    {
+      title: "React: All You Need to Know with Practical Project",
+      issuer: "Udemy",
+      date: "2024",
+      href: "https://drive.google.com/file/d/1mNLeKztm-WmGowS-Ua6yArtwDLWdJaNm/view?usp=sharing",
+      badge: "React Frontend",
+    },
+    {
+      title: "TickTrack: Ticketing System Dengan Laravel 12 dan Vue Js",
+      issuer: "Build With Angga",
+      date: "2026",
+      href: "https://drive.google.com/file/d/1xX4d8Non82qukyJdFcMlOD91VZn3fNil/view?usp=sharing",
+      badge: "Full-Stack Laravel & Vue Js",
+    },
+    {
+      title: "Use Generative AI for Software Development",
+      issuer: "IBM SkillsBuild",
+      date: "2025",
+      href: "https://drive.google.com/file/d/1oXk4GiEFQYRhz7U-6uRRZETF4-AvoxF6/view?usp=sharing",
+      badge: "AI Agent Programming",
+    },
+  ],
   projects: [
     {
-      title: "Simple Portfolio",
-      href: "https://github.com/killflex/simple-portfolio",
+      title: "APIGS Indonesia",
+      href: "",
       dates: "",
       active: true,
-      description: "A modern, simple, and high performance portfolio website.",
-      technologies: ["Typescript", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      category: "Website",
-      links: [
-        {
-          type: "Website",
-          href: "https://killflex.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/killflex/simple-portfolio",
-          icon: <Icons.github className="size-3" />,
-        },
+      description:
+        "Corporate web platform with dynamic content and scalable architecture.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Drizzle",
+        "Docker",
       ],
-      image: "/projects/simple-portfolio-l.png",
-      image2: "/projects/simple-portfolio-d.png",
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
       video: "",
       design: "",
     },
     {
-      title: "Analytix SaaS",
+      title: "Expense Kernel",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Custom PHP framework based expense tracking application.",
+      technologies: ["PHP", "CSS", "MySQL", "Own Framework"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Penggajian",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "Payroll web application automating salary components calculation.",
+      technologies: ["PHP", "JavaScript", "Bootstrap", "MySQL"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Unipin Parody",
+      href: "https://github.com/killflex/unipin-parody",
+      dates: "",
+      active: true,
+      description:
+        "E-commerce gaming voucher store simulation featuring Stripe payment processing.",
+      technologies: ["PHP", "Stripe", "JavaScript", "Bootstrap", "MySQL"],
+      category: ["Web App"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/killflex/unipin-parody",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741427791/unipinparody_ej0guc.png",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Lost N Found Fasilkom",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Lost and found platform for university faculty.",
+      technologies: ["Laravel", "Vue", "Tailwind CSS", "MySQL"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Go Kasir API",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Backend API for point of sale system.",
+      technologies: ["Golang"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Njajan UPN",
+      href: "https://github.com/killflex/njajan-upn",
+      dates: "",
+      active: true,
+      description:
+        "Culinary recommendation platform to discover food spots around UPN Veteran Jawa Timur.",
+      technologies: ["PHP", "JavaScript", "Bootstrap", "MySQL"],
+      category: ["Web App"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/killflex/njajan-upn",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/njajanupn.png",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Sistem Gim Edukasi",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Educational game system platform.",
+      technologies: ["PHP", "JavaScript", "Bootstrap", "MySQL"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "MyBookshelf API",
+      href: "",
+      dates: "",
+      active: true,
+      description: "RESTful API for book management and tracking.",
+      technologies: ["Express.js", "MongoDB", "Swagger UI"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Analytix SaaS Landing Page",
       href: "https://github.com/killflex/analytix-practice",
       dates: "",
       active: true,
       description:
-        "A sleek, single-page static landing page for a fictional data analytics service.",
-      technologies: [
-        "Javascript",
-        "React.js",
-        "Tailwind CSS",
-        "Shadcn UI",
-        "Framer Motion",
-        "Lenis",
-      ],
-      category: "Website",
+        "A sleek, dynamic landing page for a fictional data analytics service with smooth micro-interactions.",
+      technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+      category: ["Web App"],
       links: [
         {
           type: "Website",
@@ -308,14 +543,74 @@ export const DATA = {
       design: "",
     },
     {
+      title: "UMKM Rajut",
+      href: "",
+      dates: "",
+      active: true,
+      description: "E-commerce platform for local knitting businesses.",
+      technologies: ["React.js", "Tailwind CSS", "Loveable"],
+      category: ["Web App"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Simple Portfolio",
+      href: "https://github.com/killflex/simple-portfolio",
+      dates: "",
+      active: true,
+      description: "A modern, minimalist, high-performance portfolio website.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      category: ["Web App"],
+      links: [
+        {
+          type: "Website",
+          href: "https://killflex.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/killflex/simple-portfolio",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/simple-portfolio-l.png",
+      image2: "/projects/simple-portfolio-d.png",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Proyek Skripsi Flutter",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "Face recognition mobile application using deep learning models.",
+      technologies: [
+        "Python",
+        "Flutter",
+        "Google ML Kit",
+        "TensorFlow",
+        "MobileFaceNet",
+      ],
+      category: ["Mobile App", "Machine Learning"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
       title: "Melasma Diagnoser",
       href: "https://github.com/killflex/melasma-kotlin",
       dates: "",
       active: true,
       description:
-        "VGG16 based CNN arch 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
-      technologies: ["Kotlin", "Python", "Tensorflow", "VGG16"],
-      category: "Mobile",
+        "VGG16-based CNN achieving 98% training accuracy and 80% testing accuracy for automated skin condition classification.",
+      technologies: ["Python", "Kotlin", "TensorFlow", "VGG16"],
+      category: ["Mobile App", "Machine Learning"],
       links: [
         {
           type: "Source",
@@ -330,57 +625,14 @@ export const DATA = {
       design: "",
     },
     {
-      title: "Melasma Diagnoser",
-      href: "https://github.com/killflex/melasma-kotlin",
-      dates: "",
-      active: true,
-      description:
-        "VGG16 based CNN arch 98% training accuracy, 80% testing accuracy, and 36% loss rate.",
-      technologies: ["Kotlin", "Python", "Tensorflow", "VGG16"],
-      category: "ML",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/killflex/melasma-kotlin",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741454866/melasmadiagnosis_wf7zsi.png",
-      image2: "",
-      video: "",
-      design: "",
-    },
-    {
-      title: "NjajanUPN",
-      href: "https://github.com/killflex/njajan-upn",
-      dates: "",
-      active: true,
-      description:
-        "Recommendation platform to find the nearest place to eat or hang out around the UPN Jatim.",
-      technologies: ["PHP", "Javascript", "CSS", "Bootstrap 5", "MySQL"],
-      category: "Website",
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/killflex/njajan-upn",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/projects/njajanupn.png",
-      image2: "",
-      video: "",
-      design: "",
-    },
-    {
-      title: "EduLaGa",
+      title: "EduLaga Game",
       href: "https://github.com/killflex/edulaga-c3",
       dates: "",
       active: true,
       description:
-        "Education based Bela Negara Indonesia mobile game, facilitate interactive learning.",
+        "Interactive educational game engine designed for national civic awareness.",
       technologies: ["Construct 3", "Photoshop"],
-      category: "Mobile",
+      category: ["Mobile App"],
       links: [
         {
           type: "Source",
@@ -400,9 +652,9 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-        "Simple game to create challenging experience similar to the original Flappy Bird.",
+        "Interactive 2D physics game recreating the iconic mobile gaming experience.",
       technologies: ["Construct 3"],
-      category: "Mobile",
+      category: ["Mobile App"],
       links: [
         {
           type: "Source",
@@ -417,100 +669,189 @@ export const DATA = {
       design: "",
     },
     {
-      title: "Unipin Parody",
-      href: "https://github.com/killflex/unipin-parody",
+      title: "Wonokromo Profile Video",
+      href: "",
       dates: "",
       active: true,
-      description:
-        "Mimics the look and functionality of the Unipin featuring Stripe payment.",
-      technologies: [
-        "PHP",
-        "Javascript",
-        "CSS",
-        "Bootstrap 5",
-        "MySQL",
-        "Stripe",
-      ],
-      category: "Website",
+      description: "Official profile video production for Wonokromo district.",
+      technologies: ["Premiere Pro", "Videographer"],
+      category: ["Motion"],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/killflex/unipin-parody",
-          icon: <Icons.github className="size-3" />,
+          type: "Youtube",
+          href: "https://youtu.be/EK0UBOLrl0E?si=P2zsDp1tH8w2H3Z1",
+          icon: <Icons.youtube className="size-3" />,
         },
       ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741427791/unipinparody_ej0guc.png",
+      image: "/projects/video-profile-wonokromo.webp",
       image2: "",
       video: "",
       design: "",
     },
     {
-      title: "Personal Portfolio",
-      href: "https://killflex.github.io",
+      title: "Nike Air Max Commercial",
+      href: "",
       dates: "",
       active: true,
-      description:
-        "Showcases digital information in a professional and engaging manner.",
-      technologies: ["HTML", "Javascript", "CSS"],
-      category: "Website",
+      description: "Conceptual commercial motion graphics for Nike.",
+      technologies: ["Blender", "After Effects", "Photoshop"],
+      category: ["Motion"],
       links: [
         {
-          type: "Website",
-          href: "https://killflex.github.io",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/killflex/killflex.github.io",
-          icon: <Icons.github className="size-3" />,
+          type: "Youtube",
+          href: "https://youtu.be/xtRYglqMs8g?si=jna-PkkSXH9wBh7Z",
+          icon: <Icons.youtube className="size-3" />,
         },
       ],
-      image:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741426992/portfoliolama_umrmyd.png",
+      image: "/projects/nike-airmax-commercial.webp",
       image2: "",
       video: "",
       design: "",
     },
     {
-      title: "FILA",
-      href: "https://www.instagram.com/p/DAFW-kRvJT1/",
+      title: "Villain Vibes Music Video",
+      href: "",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Cinema 4D", "Redshift", "Photoshop"],
-      category: "Design",
+      description: "Louverture x Trickywi x Shirobeats - Villain Vibes Music Video.",
+      technologies: ["After Effects", "Blender"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Twitter",
+          href: "https://x.com/iamkillflex/status/1553772127429758976",
+          icon: <Icons.x className="size-3" />,
+        },
+        {
+          type: "Youtube (Official)",
+          href: "https://youtu.be/3tx089zQRvc?si=UWyFo4WNBLXJOYoy",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "/projects/villainvibes-music-video.webp",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "pop up ナイキ (NIKE)",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Conceptual 3D popup motion design for Nike sneakers.",
+      technologies: ["Cinema 4D", "After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Youtube",
+          href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Twitter",
+          href: "https://x.com/iamkillflex/status/1682982294079033344",
+          icon: <Icons.x className="size-3" />,
+        },
+      ],
+      image: "/projects/popup-nike.webp",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Goldenrods",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Abstract 3D motion graphics exploring golden aesthetics.",
+      technologies: ["Cinema 4D", "After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Youtube",
+          href: "https://youtube.com/shorts/pnyg8gxXmFE?si=cEM8Eb0McC41wzBt",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Twitter",
+          href: "https://x.com/iamkillflex/status/1785656325168656876",
+          icon: <Icons.x className="size-3" />,
+        },
+      ],
+      image: "/projects/golden-rods.webp",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Abstract Loop",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Abstract 3D loop animation and visual experimentation.",
+      technologies: ["Cinema 4D", "After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Youtube",
+          href: "https://youtube.com/shorts/kpCuDKJ-2bs?si=27-aJjBw68TDJ5Cc",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Twitter",
+          href: "https://x.com/iamkillflex/status/1682397475267813378",
+          icon: <Icons.x className="size-3" />,
+        },
+      ],
+      image: "/projects/abstract-loop.webp",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Phone RTX",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Photorealistic smartphone rendering with ray tracing.",
+      technologies: ["Blender", "After Effects", "Octane"],
+      category: ["Motion"],
       links: [],
       image: "",
       image2: "",
       video: "",
-      design:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741504380/landscapefila_ppupwt.png",
+      design: "",
     },
     {
-      title: "im_still_waiting",
-      href: "https://www.instagram.com/p/CUzW4kFFIl2",
+      title: "Dance Cyberpunk",
+      href: "",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Blender", "Octane", "After Effects"],
-      category: "Design",
+      description: "Cyberpunk themed motion capture dance animation.",
+      technologies: ["Cinema 4D", "After Effects"],
+      category: ["Motion"],
       links: [],
       image: "",
       image2: "",
       video: "",
-      design:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741497487/test_landscape_00000_njrkgx.jpg",
+      design: "",
     },
     {
-      title: "TAKE OUT",
+      title: "Take Out",
       href: "https://www.instagram.com/p/CUZ97EhAL5j",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Blender", "Octane", "After Effects"],
-      category: "Design",
-      links: [],
+      description:
+        "Stylized 3D architectural rendering and cinematic lighting mood.",
+      technologies: ["Blender", "After Effects", "Photoshop", "Octane"],
+      category: ["Design"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CUZ97EhAL5j",
+          icon: <Icons.instagram className="size-3" />,
+        },
+      ],
       image: "",
       image2: "",
       video: "",
@@ -518,14 +859,135 @@ export const DATA = {
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741500789/TAKE_OUT_itu8yo.jpg",
     },
     {
-      title: "FALLIN",
+      title: "Buku",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Digital book cover design.",
+      technologies: ["Photoshop"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Nobody",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Conceptual 3D character design and atmospheric scene.",
+      technologies: ["Blender", "After Effects", "Octane"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Tote Bag",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Apparel merchandise tote bag mockup design.",
+      technologies: ["Photoshop"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Fila Hijau",
+      href: "https://www.instagram.com/p/DAFW-kRvJT1/",
+      dates: "",
+      active: true,
+      description:
+        "3D aesthetic commercial landscape and brand concept art crafted for FILA.",
+      technologies: ["Cinema 4D", "After Effects"],
+      category: ["Design"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/DAFW-kRvJT1/",
+          icon: <Icons.instagram className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "",
+      design:
+        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741504380/landscapefila_ppupwt.png",
+    },
+    {
+      title: "Sepatu Nike Hitam",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Photorealistic 3D rendering of black Nike sneakers.",
+      technologies: ["Blender", "Photoshop"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Abstract Green",
+      href: "",
+      dates: "",
+      active: true,
+      description: "Green-themed abstract 3D visual composition.",
+      technologies: ["Cinema 4D", "Photoshop"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
+    },
+    {
+      title: "Im Still Waiting",
+      href: "https://www.instagram.com/p/CUzW4kFFIl2",
+      dates: "",
+      active: true,
+      description:
+        "Surreal 3D environment exploring isolation and emotional depth through lighting.",
+      technologies: ["Blender", "Photoshop"],
+      category: ["Design"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CUzW4kFFIl2",
+          icon: <Icons.instagram className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "",
+      design:
+        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741497487/test_landscape_00000_njrkgx.jpg",
+    },
+    {
+      title: "Fallin Cyberpunk",
       href: "https://www.instagram.com/p/CS_vskclQqI",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Blender", "Octane", "After Effects"],
-      category: "Design",
-      links: [],
+      description:
+        "Atmospheric cyberpunk 3D composition with volumetric lighting and photorealistic texturing.",
+      technologies: ["Blender", "After Effects"],
+      category: ["Design"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CS_vskclQqI",
+          icon: <Icons.instagram className="size-3" />,
+        },
+      ],
       image: "",
       image2: "",
       video: "",
@@ -533,34 +995,48 @@ export const DATA = {
         "https://res.cloudinary.com/dn2tic45s/image/upload/v1741504237/portah_bo2_4K_fbnc81.jpg",
     },
     {
-      title: "NOBODY",
-      href: "https://www.instagram.com/p/CRk7wVPruNa",
+      title: "Dualsense",
+      href: "",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Blender", "Octane", "After Effects"],
-      category: "Design",
+      description:
+        "Detailed 3D modeling and texturing of PlayStation 5 DualSense controller.",
+      technologies: ["Blender", "Photoshop", "After Effects"],
+      category: ["Design"],
       links: [],
       image: "",
       image2: "",
       video: "",
-      design:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741500789/train_octane_e1xm6f.jpg",
+      design: "",
     },
     {
-      title: "CLOUD TRAIN",
-      href: "https://www.instagram.com/p/CNlUlucJonE",
+      title: "Nobita Room",
+      href: "",
       dates: "",
       active: true,
-      description: "",
-      technologies: ["Blender", "Cycles", "After Effects"],
-      category: "Design",
+      description: "Recreation of Nobita's room from Doraemon in 3D.",
+      technologies: ["Cinema 4D", "Photoshop", "After Effects"],
+      category: ["Design"],
       links: [],
       image: "",
       image2: "",
       video: "",
-      design:
-        "https://res.cloudinary.com/dn2tic45s/image/upload/v1741503512/cloudtrain_1_inawna.jpg",
+      design: "",
+    },
+    {
+      title: "Industrial Facility",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "Large scale 3D environment design of an industrial facility.",
+      technologies: ["Blender", "Photoshop"],
+      category: ["Design"],
+      links: [],
+      image: "",
+      image2: "",
+      video: "",
+      design: "",
     },
   ],
 } as const;

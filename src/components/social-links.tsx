@@ -1,50 +1,55 @@
-import Image from "next/image";
-import Link from "next/link";
 import { DATA } from "@/data/resume";
-import { ArrowUpRightIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function SocialLinks() {
+  const socials = [
+    {
+      name: "GitHub",
+      url: DATA.contact.social.GitHub.url,
+      icon: DATA.contact.social.GitHub.icon,
+    },
+    {
+      name: "LinkedIn",
+      url: DATA.contact.social.LinkedIn.url,
+      icon: DATA.contact.social.LinkedIn.icon,
+    },
+    {
+      name: "Instagram",
+      url: DATA.contact.social.Instagram.url,
+      icon: DATA.contact.social.Instagram.icon,
+    },
+    {
+      name: "Twitter",
+      url: DATA.contact.social.Twitter.url,
+      icon: DATA.contact.social.Twitter.icon,
+    },
+    {
+      name: "YouTube",
+      url: DATA.contact.social.Youtube.url,
+      icon: DATA.contact.social.Youtube.icon,
+    },
+  ];
+
   return (
-    <>
-      {Object.values(DATA.contact.social).map((social) => (
+    <div
+      className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2"
+      role="list"
+      aria-label="Social media profiles"
+    >
+      {socials.map((social) => (
         <Link
-          key={social.url}
-          className="group/link flex cursor-pointer items-center gap-4 sm:gap-6 py-2 pr-2 rounded-lg"
+          key={social.name}
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Visit ${social.name} profile`}
+          role="listitem"
+          className="inline-flex items-center justify-center h-7 px-3 rounded-full text-xs font-medium text-muted-foreground hover:text-foreground bg-muted/50 hover:bg-muted border border-border/50 gap-1.5"
+          aria-label={`Visit my ${social.name} profile (opens in new tab)`}
         >
-          <div className="relative size-9 shrink-0">
-            <Image
-              className="rounded-xl"
-              src={social.iconWebp}
-              alt={`${social.name} icon`}
-              fill
-              sizes="36px"
-            />
-            <div
-              className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/15"
-              aria-hidden="true"
-            />
-          </div>
-
-          <div className="flex-1 min-w-0">
-            <p className="flex items-center text-xs sm:text-sm font-medium underline-offset-2 group-hover/link:underline truncate">
-              {social.name}
-            </p>
-
-            <p className="text-xs text-muted-foreground truncate">
-              {social.description}
-            </p>
-          </div>
-
-          <ArrowUpRightIcon
-            className="size-4 text-muted-foreground shrink-0"
-            aria-hidden="true"
-          />
+          <social.icon className="size-3.5 shrink-0" />
+          <span>{social.name}</span>
         </Link>
       ))}
-    </>
+    </div>
   );
 }

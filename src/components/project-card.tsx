@@ -120,7 +120,7 @@ const ProjectCardComponent = ({
               </div>
             </div>
           </CardHeader>
-          <CardContent className="mt-auto flex flex-col px-4">
+          <CardContent className="flex flex-col px-4">
             {tags && tags.length > 0 && (
               <div
                 className="flex flex-wrap gap-1"
