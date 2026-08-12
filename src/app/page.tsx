@@ -1,6 +1,4 @@
 import { DownloadCvModal } from "@/components/download-cv-modal";
-import FeaturedCard from "@/components/featured-card";
-import { Icons } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import SocialLinks from "@/components/social-links";
@@ -22,7 +20,6 @@ import {
   SmartphoneIcon,
   SparklesIcon,
   UserRound,
-  Star
 } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -35,7 +32,9 @@ export default function Page() {
     .filter((p) => (p.category as readonly string[]).includes("Mobile App"))
     .slice(0, 2);
   const mlProjects = DATA.projects
-    .filter((p) => (p.category as readonly string[]).includes("Machine Learning"))
+    .filter((p) =>
+      (p.category as readonly string[]).includes("Machine Learning"),
+    )
     .slice(0, 2);
   const motionProjects = DATA.projects
     .filter((p) => (p.category as readonly string[]).includes("Motion"))
@@ -107,43 +106,61 @@ export default function Page() {
       </section>
 
       {/* 2. FEATURED WORK */}
-      <section id="featured-work" aria-labelledby="featured-heading" className="space-y-4">
+      {/* <section
+        id="featured-work"
+        aria-labelledby="featured-heading"
+        className="space-y-4"
+      >
         <div className="flex items-center justify-between">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               <SparklesIcon className="size-3.5 text-muted-foreground" />
               Spotlight
             </div>
-            <h2 id="featured-heading" className="text-2xl font-bold tracking-tight sm:text-3xl">
+            <h2
+              id="featured-heading"
+              className="text-2xl font-bold tracking-tight sm:text-3xl"
+            >
               Featured Work
             </h2>
           </div>
         </div>
         <FeaturedCard />
-      </section>
+      </section> */}
 
       {/* 3. PROJECTS BY CATEGORY (Zero friction, direct sections per category) */}
-      <section id="projects" aria-labelledby="projects-heading" className="space-y-4">
+      <section
+        id="projects"
+        aria-labelledby="projects-heading"
+        className="space-y-4"
+      >
         <div className="space-y-2 text-left">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-muted text-muted-foreground">
-            <Star className="size-3 text-muted-foreground" />
+            <SparklesIcon className="size-3 text-muted-foreground" />
             Curated Showcase
           </div>
-          <h2 id="projects-heading" className="text-2xl font-bold tracking-tight sm:text-3xl">
+          <h2
+            id="projects-heading"
+            className="text-2xl font-bold tracking-tight sm:text-3xl"
+          >
             Projects by Category
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground max-w-xl">
-            Directly browse selected works across full-stack web engineering, mobile development, machine learning, motion design, and 3D visual concepts.
+            Directly browse selected works across full-stack web engineering,
+            mobile development, machine learning, motion design, and 3D visual
+            concepts.
           </p>
         </div>
-        
+
         <div className="space-y-8">
           {/* 3.1 Web App Category */}
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
                 <GlobeIcon className="size-4 text-muted-foreground" />
-                <h3 className="text-base sm:text-lg font-bold">Web Applications</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  Web Applications
+                </h3>
               </div>
               <Link
                 href="/projects?category=Website"
@@ -177,7 +194,9 @@ export default function Page() {
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
                 <SmartphoneIcon className="size-4 text-muted-foreground" />
-                <h3 className="text-base sm:text-lg font-bold">Mobile Applications</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  Mobile Applications
+                </h3>
               </div>
               <Link
                 href="/projects?category=Mobile"
@@ -211,7 +230,9 @@ export default function Page() {
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
                 <CpuIcon className="size-4 text-muted-foreground" />
-                <h3 className="text-base sm:text-lg font-bold">Machine Learning &amp; AI</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  Machine Learning &amp; AI
+                </h3>
               </div>
               <Link
                 href="/projects?category=ML"
@@ -245,7 +266,9 @@ export default function Page() {
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
                 <ClapperboardIcon className="size-4 text-muted-foreground" />
-                <h3 className="text-base sm:text-lg font-bold">Motion Design &amp; Visual FX</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  Motion Design &amp; Visual FX
+                </h3>
               </div>
               <Link
                 href="/projects?category=Motion"
@@ -279,7 +302,9 @@ export default function Page() {
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
                 <PaletteIcon className="size-4 text-muted-foreground" />
-                <h3 className="text-base sm:text-lg font-bold">3D Art &amp; Design</h3>
+                <h3 className="text-base sm:text-lg font-bold">
+                  3D Art &amp; Design
+                </h3>
               </div>
               <Link
                 href="/projects?category=Design"
@@ -310,14 +335,18 @@ export default function Page() {
 
           {/* View all button CTA */}
           <div className="pt-2 text-center">
-            <Button variant="outline" size="sm" className="rounded-full px-5 cursor-pointer text-xs" asChild>
+            <Button
+              variant="outline"
+              size="sm"
+              className="rounded-full px-5 cursor-pointer text-xs"
+              asChild
+            >
               <Link href="/projects" className="gap-2">
                 Explore All Projects Archive
                 <ArrowRightIcon className="size-3.5" />
               </Link>
             </Button>
           </div>
-
         </div>
       </section>
 
@@ -336,12 +365,12 @@ export default function Page() {
 
       {/* 5. WORK EXPERIENCE (Tetap ada, tapi ringkas) */}
       <section id="work" aria-labelledby="work-heading" className="space-y-4">
-          <div className="flex items-center gap-2">
-            <BriefcaseIcon className="size-4 text-muted-foreground" />
-            <h2 id="work-heading" className="text-xl font-bold tracking-tight">
-              Work Experience
-            </h2>
-          </div>
+        <div className="flex items-center gap-2">
+          <BriefcaseIcon className="size-4 text-muted-foreground" />
+          <h2 id="work-heading" className="text-xl font-bold tracking-tight">
+            Work Experience
+          </h2>
+        </div>
         <div className="flex min-h-0 flex-col gap-y-3" role="list">
           {DATA.work.map((work) => (
             <ResumeCard
@@ -361,7 +390,11 @@ export default function Page() {
       </section>
 
       {/* 6. SKILLS (Tech + Design Tools) */}
-      <section id="skills" aria-labelledby="skills-heading" className="space-y-4">
+      <section
+        id="skills"
+        aria-labelledby="skills-heading"
+        className="space-y-4"
+      >
         <div className="flex items-center gap-2">
           <Code2Icon className="size-4 text-muted-foreground" />
           <h2 id="skills-heading" className="text-xl font-bold tracking-tight">
@@ -414,12 +447,18 @@ export default function Page() {
       </section>
 
       {/* 7. EDUCATION + CERTIFICATIONS */}
-      <section id="education" aria-labelledby="education-heading" className="space-y-6">
-
+      <section
+        id="education"
+        aria-labelledby="education-heading"
+        className="space-y-6"
+      >
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <GraduationCapIcon className="size-4 text-muted-foreground" />
-            <h2 id="education-heading" className="text-xl font-bold tracking-tight">
+            <h2
+              id="education-heading"
+              className="text-xl font-bold tracking-tight"
+            >
               Education
             </h2>
           </div>
@@ -443,7 +482,10 @@ export default function Page() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <AwardIcon className="size-4 text-muted-foreground" />
-            <h2 id="certification-heading" className="text-xl font-bold tracking-tight">
+            <h2
+              id="certification-heading"
+              className="text-xl font-bold tracking-tight"
+            >
               Certifications
             </h2>
           </div>
@@ -500,7 +542,11 @@ export default function Page() {
       </section>
 
       {/* 8. CONTACT */}
-      <section id="contact" aria-labelledby="contact-heading" className="pt-4 pb-12">
+      <section
+        id="contact"
+        aria-labelledby="contact-heading"
+        className="pt-4 pb-12"
+      >
         <div className="rounded-2xl border bg-card/60 backdrop-blur-sm p-6 sm:p-10 text-center space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground">
             <MailIcon className="size-3 text-muted-foreground" />

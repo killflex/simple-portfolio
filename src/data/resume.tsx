@@ -368,7 +368,7 @@ export const DATA = {
   projects: [
     {
       title: "APIGS Indonesia",
-      href: "",
+      href: "https://apigs.igsindonesia.org",
       dates: "",
       active: true,
       description:
@@ -382,9 +382,15 @@ export const DATA = {
         "Docker",
       ],
       category: ["Web App"],
-      links: [],
-      image: "",
-      image2: "",
+      links: [
+        {
+          type: "Website",
+          href: "https://apigs.igsindonesia.org",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/apigs-l.png",
+      image2: "/projects/apigs-d.png",
       video: "",
       design: "",
     },
