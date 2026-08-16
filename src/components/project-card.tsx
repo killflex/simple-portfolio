@@ -123,7 +123,7 @@ const ProjectCardComponent = ({
           <CardContent className="flex flex-col px-4">
             {tags && tags.length > 0 && (
               <div
-                className="flex flex-wrap gap-1"
+                className="flex gap-1 overflow-x-auto pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -131,7 +131,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex items-center rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -158,7 +158,7 @@ const ProjectCardComponent = ({
           <CardContent className="mt-auto flex flex-col px-4">
             {tags && tags.length > 0 && (
               <div
-                className="flex flex-wrap gap-1"
+                className="flex gap-1 overflow-x-auto pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -166,7 +166,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex items-center rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>

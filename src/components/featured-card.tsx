@@ -1,6 +1,16 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { DATA } from "@/data/resume";
-import { TrendingUpIcon, ZapIcon, ShieldCheckIcon, GaugeIcon } from "lucide-react";
+import {
+  GaugeIcon,
+  ShieldCheckIcon,
+  TrendingUpIcon,
+  ZapIcon,
+} from "lucide-react";
 import Image from "next/image";
 
 export default function FeaturedCard() {
@@ -8,9 +18,18 @@ export default function FeaturedCard() {
 
   const metricIcons = [
     <ZapIcon key="zap" className="size-3 sm:size-3.5 text-muted-foreground" />,
-    <GaugeIcon key="gauge" className="size-3 sm:size-3.5 text-muted-foreground" />,
-    <TrendingUpIcon key="trend" className="size-3 sm:size-3.5 text-muted-foreground" />,
-    <ShieldCheckIcon key="shield" className="size-3 sm:size-3.5 text-muted-foreground" />,
+    <GaugeIcon
+      key="gauge"
+      className="size-3 sm:size-3.5 text-muted-foreground"
+    />,
+    <TrendingUpIcon
+      key="trend"
+      className="size-3 sm:size-3.5 text-muted-foreground"
+    />,
+    <ShieldCheckIcon
+      key="shield"
+      className="size-3 sm:size-3.5 text-muted-foreground"
+    />,
   ];
 
   return (
@@ -71,7 +90,7 @@ export default function FeaturedCard() {
                 sizes="(max-width: 640px) 100vw, 400px"
                 className="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
                 <span className="text-[11px] font-medium text-white">
                   Lighthouse 100 Audit Verification
                 </span>
@@ -86,7 +105,7 @@ export default function FeaturedCard() {
                 sizes="(max-width: 640px) 100vw, 400px"
                 className="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
                 <span className="text-[11px] font-medium text-white">
                   GTmetrix Grade A Report
                 </span>
