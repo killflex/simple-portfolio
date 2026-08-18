@@ -32,8 +32,8 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
     if (activeCategory === "All") {
       return DATA.projects;
     }
-    return DATA.projects.filter((item) => 
-      (item.category as readonly string[]).includes(activeCategory)
+    return DATA.projects.filter((item) =>
+      (item.category as readonly string[]).includes(activeCategory),
     );
   }, [activeCategory]);
 
@@ -51,7 +51,7 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
         {categories.map((category) => (
           <Button
             key={category}
-            className="cursor-pointer rounded-full text-xs transition-all duration-200"
+            className="cursor-pointer rounded-full text-xs"
             size="sm"
             variant={activeCategory === category ? "default" : "outline"}
             onClick={() => handleCategoryChange(category)}
@@ -64,7 +64,9 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
             <span className="ml-1.5 text-[10px] opacity-70">
               {category === "All"
                 ? DATA.projects.length
-                : DATA.projects.filter((p) => (p.category as readonly string[]).includes(category)).length}
+                : DATA.projects.filter((p) =>
+                    (p.category as readonly string[]).includes(category),
+                  ).length}
             </span>
           </Button>
         ))}
@@ -93,7 +95,10 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
             />
           ))
         ) : (
-          <p className="text-center text-muted-foreground text-sm py-8 col-span-full" role="status">
+          <p
+            className="text-center text-muted-foreground text-sm py-8 col-span-full"
+            role="status"
+          >
             No projects found for this category.
           </p>
         )}

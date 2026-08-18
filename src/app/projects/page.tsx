@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col min-h-dvh space-y-8">
+    <main className="flex flex-col min-h-dvh space-y-4">
       <div>
         <Link
           href="/"
           className={cn(
             buttonVariants({ variant: "ghost", size: "sm" }),
-            "gap-2 text-xs text-muted-foreground hover:text-foreground pl-0 pr-3 mb-6"
+            "gap-2 rounded-lg text-xs text-muted-foreground hover:text-foreground px-3 mb-6",
           )}
           aria-label="Back to home"
         >
@@ -28,14 +28,12 @@ export default function ProjectsPage() {
         </Link>
 
         <div className="space-y-2 text-left">
-          <div className="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-muted text-muted-foreground">
-            Archive & Portfolio
-          </div>
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
             All Projects
-          </h1>
-          <p className="text-muted-foreground text-sm sm:text-base max-w-xl">
-            A comprehensive showcase of web applications, mobile applications, machine learning systems, motion graphics, and 3D visual designs.
+          </h2>
+          <p className="text-muted-foreground text-xs sm:text-sm">
+            A comprehensive showcase of web applications, mobile applications,
+            machine learning systems, motion graphics, and 3D visual designs.
           </p>
         </div>
       </div>

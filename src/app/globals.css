@@ -228,10 +228,28 @@
     @apply bg-selection text-selection-foreground;
   }
 
+  html {
+    scroll-behavior: auto;
+  }
+
   body {
     @apply bg-background font-sans text-foreground antialiased;
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
+    overscroll-behavior: none;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis-stopped {
+    overflow: hidden;
   }
 
   /* Custom scrollbar styling. Thanks @shadcn-ui */

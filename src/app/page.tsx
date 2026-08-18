@@ -121,7 +121,7 @@ export default function Page() {
           >
             Projects by Category
           </h2>
-          <p className="text-xs sm:text-sm text-muted-foreground max-w-xl">
+          <p className="text-xs sm:text-sm text-muted-foreground">
             Directly browse selected works across full-stack web engineering,
             mobile development, machine learning, motion design, and 3D visual
             concepts.
@@ -379,7 +379,7 @@ export default function Page() {
         </div>
         <div className="grid grid-cols-1 gap-3">
           {/* Tech Stack */}
-          <div className="rounded-xl border bg-card/50 p-4 space-y-3">
+          <div className="rounded-lg border bg-card/50 p-4 space-y-3">
             <h3 className="text-sm font-semibold text-foreground">
               Engineering &amp; Development
             </h3>
@@ -400,9 +400,9 @@ export default function Page() {
           </div>
 
           {/* Design Tools */}
-          <div className="rounded-xl border bg-card/50 p-4 space-y-3">
+          <div className="rounded-lg border bg-card/50 p-4 space-y-3">
             <h3 className="text-sm font-semibold text-foreground">
-              Motion &amp; UI/UX
+              Motion Design &amp; UI/UX
             </h3>
             <ul
               className="flex flex-wrap gap-1.5"
@@ -422,7 +422,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 7. EDUCATION + CERTIFICATIONS */}
+      {/* 7. EDUCATION */}
       <section
         id="education"
         aria-labelledby="education-heading"
@@ -453,8 +453,14 @@ export default function Page() {
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Certifications */}
+      {/*  8. Certifications */}
+      <section
+        id="education"
+        aria-labelledby="education-heading"
+        className="space-y-6"
+      >
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <AwardIcon className="size-4 text-muted-foreground" />
@@ -472,7 +478,7 @@ export default function Page() {
                 href={cert.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col justify-between rounded-xl border bg-card/40 p-3.5 hover:bg-muted/50 hover:border-primary/30"
+                className="group flex flex-col justify-between rounded-lg border bg-card/40 p-3.5 hover:bg-muted/50 hover:border-primary/30"
               >
                 <div className="space-y-1">
                   <div className="flex items-start justify-between gap-2">
@@ -517,7 +523,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 8. CONTACT */}
+      {/* 9. CONTACT */}
       <section
         id="contact"
         aria-labelledby="contact-heading"
@@ -542,7 +548,7 @@ export default function Page() {
           <div className="pt-2 flex flex-wrap justify-center items-center gap-3">
             <Button
               size="default"
-              className="rounded-xl px-6 cursor-pointer font-medium gap-2 shadow-sm"
+              className="rounded-lg px-6 cursor-pointer font-medium gap-2 shadow-sm"
               asChild
             >
               <Link
@@ -556,7 +562,7 @@ export default function Page() {
             <Button
               size="default"
               variant="outline"
-              className="rounded-xl px-6 cursor-pointer font-medium gap-2 shadow-sm"
+              className="rounded-lg px-6 cursor-pointer font-medium gap-2 shadow-sm"
               asChild
             >
               <Link

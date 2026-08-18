@@ -53,7 +53,7 @@ export function DownloadCvModal({
         onClick={() => setIsOpen(true)}
         className={cn(
           "rounded-lg cursor-pointer font-medium gap-1.5 shadow-sm",
-          className
+          className,
         )}
         aria-haspopup="dialog"
         aria-expanded={isOpen}
@@ -108,7 +108,7 @@ export function DownloadCvModal({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="group relative flex flex-col justify-between rounded-xl border border-border/70 bg-card/60 p-4 transition-all hover:bg-muted/50 hover:shadow-md cursor-pointer text-left"
+                className="group relative flex flex-col justify-between rounded-lg border border-border/70 bg-card/60 p-4 transition-all hover:bg-muted/50 hover:shadow-md cursor-pointer text-left"
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
@@ -144,7 +144,7 @@ export function DownloadCvModal({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="group relative flex flex-col justify-between rounded-xl border border-border/70 bg-card/60 p-4 transition-all hover:bg-muted/50 hover:shadow-md cursor-pointer text-left"
+                className="group relative flex flex-col justify-between rounded-lg border border-border/70 bg-card/60 p-4 transition-all hover:bg-muted/50 hover:shadow-md cursor-pointer text-left"
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">

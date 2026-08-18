@@ -1,5 +1,6 @@
 import ClarityScript from "@/components/clarity-script";
 import GoogleAnalytics from "@/components/google-analytics";
+import { LenisProvider } from "@/components/lenis-provider";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -115,12 +116,14 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-            <GoogleAnalytics />
-            <ClarityScript />
-          </TooltipProvider>
+          <LenisProvider>
+            <TooltipProvider delayDuration={0}>
+              {children}
+              <Navbar />
+              <GoogleAnalytics />
+              <ClarityScript />
+            </TooltipProvider>
+          </LenisProvider>
         </ThemeProvider>
       </body>
     </html>
