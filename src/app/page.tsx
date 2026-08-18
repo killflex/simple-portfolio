@@ -105,30 +105,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 2. FEATURED WORK */}
-      {/* <section
-        id="featured-work"
-        aria-labelledby="featured-heading"
-        className="space-y-4"
-      >
-        <div className="flex items-center justify-between">
-          <div className="space-y-1">
-            <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              <SparklesIcon className="size-3.5 text-muted-foreground" />
-              Spotlight
-            </div>
-            <h2
-              id="featured-heading"
-              className="text-2xl font-bold tracking-tight sm:text-3xl"
-            >
-              Featured Work
-            </h2>
-          </div>
-        </div>
-        <FeaturedCard />
-      </section> */}
-
-      {/* 3. PROJECTS BY CATEGORY (Zero friction, direct sections per category) */}
       <section
         id="projects"
         aria-labelledby="projects-heading"
@@ -331,21 +307,21 @@ export default function Page() {
                 />
               ))}
             </div>
-          </div>
 
-          {/* View all button CTA */}
-          <div className="pt-2 text-center">
-            <Button
-              variant="outline"
-              size="sm"
-              className="rounded-full px-5 cursor-pointer text-xs"
-              asChild
-            >
-              <Link href="/projects" className="gap-2">
-                Explore All Projects Archive
-                <ArrowRightIcon className="size-3.5" />
-              </Link>
-            </Button>
+            {/* View all button CTA */}
+            <div className="pt-2 text-center">
+              <Button
+                variant="outline"
+                size="sm"
+                className="rounded-full px-5 cursor-pointer text-xs"
+                asChild
+              >
+                <Link href="/projects" className="gap-2">
+                  Explore All Projects Archive
+                  <ArrowRightIcon className="size-3.5" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -426,7 +402,7 @@ export default function Page() {
           {/* Design Tools */}
           <div className="rounded-xl border bg-card/50 p-4 space-y-3">
             <h3 className="text-sm font-semibold text-foreground">
-              Motion, 3D &amp; UI/UX
+              Motion &amp; UI/UX
             </h3>
             <ul
               className="flex flex-wrap gap-1.5"

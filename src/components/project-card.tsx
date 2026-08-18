@@ -155,7 +155,7 @@ const ProjectCardComponent = ({
               </time>
             </div>
           </CardHeader>
-          <CardContent className="mt-auto flex flex-col px-4">
+          <CardContent className="flex flex-col px-4">
             {tags && tags.length > 0 && (
               <div
                 className="flex gap-1 overflow-x-auto pb-1"
