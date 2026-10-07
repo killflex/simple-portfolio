@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/surabaya",
   description: "Full Stack Developer & Motion Designer",
   summary:
-    "I'm a Full-Stack Developer and Motion Designer based in Surabaya, Indonesia. A rare combination of someone who can both build the product and make it look compelling.\n\nOn the development side, I build fast, scalable web applications with React.js, Next.js, and Laravel with a focus on performance, clean architecture, and real-world deployment. On the creative side, I've spent years crafting motion graphics, video edits, and 3D visuals for clients across industries.\n\nWhat makes me different? I don't just execute tasks, I understand the full picture from database schema to deployment pipeline, and from storyboard to final render. That overlap between technical precision and visual thinking is where I do my best work.\n\nCurrently open to Full-Stack, Frontend, Backend, Video Editor, Motion Designer, and 3D Artist roles.",
+    "I'am a Full-Stack Developer and Motion Designer based in Surabaya, Indonesia. I build web applications with React.js, Next.js, and Laravel, focusing on clean architecture, performance, and real-world deployment.\n\nBeyond engineering, I've spent years crafting motion design, video edits, and 3D visuals  for clients across industries. I bridge technical development with visual storytelling to create cohesive digital products.\n\nCurrently open to Full-Stack, Frontend, Backend, Motion Designer, Video Editor, and 3D Artist roles.",
   cv: {
     fullstack: {
       title: "CV Full Stack Developer",

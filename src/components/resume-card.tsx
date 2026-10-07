@@ -98,7 +98,7 @@ const ResumeCardComponent = ({
                   aria-hidden={!isExpanded}
                 >
                   <div className="overflow-hidden">
-                    <div className="mt-2">{description}</div>
+                    <div className="mt-2 leading-relaxed">{description}</div>
                   </div>
                 </div>
               )}
