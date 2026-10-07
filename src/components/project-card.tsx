@@ -115,7 +115,7 @@ const ProjectCardComponent = ({
               <time className="font-sans text-xs" dateTime={dates}>
                 {dates}
               </time>
-              <div className="line-clamp-2 max-w-full text-pretty text-xs">
+              <div className="line-clamp-2 max-w-full text-pretty text-sm">
                 <Markdown>{description}</Markdown>
               </div>
             </div>
@@ -123,7 +123,7 @@ const ProjectCardComponent = ({
           <CardContent className="flex flex-col px-4 grow">
             {tags && tags.length > 0 && (
               <div
-                className="flex flex-wrap gap-1 pb-1"
+                className="flex gap-1 overflow-x-auto pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -131,7 +131,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -158,7 +158,7 @@ const ProjectCardComponent = ({
           <CardContent className="flex flex-col px-4 grow">
             {tags && tags.length > 0 && (
               <div
-                className="flex flex-wrap gap-1 pb-1"
+                className="flex gap-1 overflow-x-auto pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -166,7 +166,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -188,7 +188,7 @@ const ProjectCardComponent = ({
               <Button
                 key={index}
                 variant="link"
-                className="gap-2 px-2 py-0 text-xs cursor-pointer"
+                className="gap-2 px-2 py-0 text-sm cursor-pointer"
                 role="listitem"
               >
                 <Link
