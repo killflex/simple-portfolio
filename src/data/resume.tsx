@@ -147,30 +147,12 @@ export const DATA = {
       logoUrl: "",
       start: "Mar 2019",
       end: "Nov 2023",
-      description: (
-        <ul className="ml-1">
-          <li>
-            &#x2022; Produced 100+ motion design and video editing works for
-            clients across industries, from logistics and e-commerce to music
-            artists, VTubers, and content creators.
-          </li>
-          <li>
-            &#x2022; Grew an organic audience of 2,000+ Instagram followers and
-            1,500+ YouTube subscribers within a year, driven entirely by
-            portfolio content.
-          </li>
-          <li>
-            &#x2022; Developed and sold editing assets and project files
-            independently, generating over $1,000 in revenue within a year.
-          </li>
-          <li>
-            &#x2022; Maintained a 100% client satisfaction rate across all
-            delivered projects, working with notable clients including JNT
-            Cargo, Sands Group, and various international VTubers and
-            influencers.
-          </li>
-        </ul>
-      ),
+      description: [
+        "Produced 100+ motion design and video editing works for clients across industries, from logistics and e-commerce to music artists, VTubers, and content creators.",
+        "Grew an organic audience of 2,000+ Instagram followers and 1,500+ YouTube subscribers within a year, driven entirely by portfolio content.",
+        "Developed and sold editing assets and project files independently, generating over $1,000 in revenue within a year.",
+        "Maintained a 100% client satisfaction rate across all delivered projects, working with notable clients including JNT Cargo, Sands Group, and various international VTubers and influencers.",
+      ],
     },
     {
       company: "Sands Group Indonesia",
