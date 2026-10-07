@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col min-h-dvh space-y-4">
+    <main className="flex flex-col min-h-dvh space-y-4 max-w-4xl mx-auto w-full px-6">
       <div>
         <Link
           href="/"
