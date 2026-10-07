@@ -54,6 +54,7 @@ export const DATA = {
     "Blender",
     "Cinema 4D",
     "Figma",
+    "Canva",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -124,30 +125,12 @@ export const DATA = {
       logoUrl: "",
       start: "Feb 2025",
       end: "Apr 2025",
-      description: (
-        <ul className="ml-1">
-          <li>
-            &#x2022; Architected the full application from scratch using
-            Next.js, TypeScript, Redux, Tailwind CSS, Framer Motion, PostgreSQL,
-            and Drizzle ORM.
-          </li>
-          <li>
-            &#x2022; Achieved Lighthouse scores of 94 (Performance), 94
-            (Accessibility), 100 (Best Practices), and 100 (SEO), with a 1.2s
-            Largest Contentful Paint. Measured on production.
-          </li>
-          <li>
-            &#x2022; Implemented SSR and SSG rendering strategies with
-            structured metadata to improve TTFB, FCP, and SEO discoverability
-            across desktop and mobile.
-          </li>
-          <li>
-            &#x2022; Containerized the full stack with Docker and managed
-            deployment via Dokploy, maintaining 99.9% uptime with zero-downtime
-            deployments.
-          </li>
-        </ul>
-      ),
+      description: [
+        "Architected the full application from scratch using Next.js, TypeScript, Redux, Tailwind CSS, Framer Motion, PostgreSQL, and Drizzle ORM.",
+        "Achieved Lighthouse scores of 94 (Performance), 94 (Accessibility), 100 (Best Practices), and 100 (SEO), with a 1.2s Largest Contentful Paint. Measured on production.",
+        "Implemented SSR and SSG rendering strategies with structured metadata to improve TTFB, FCP, and SEO discoverability across desktop and mobile.",
+        "Containerized the full stack with Docker and managed deployment via Dokploy, maintaining 99.9% uptime with zero-downtime deployments.",
+      ],
     },
     {
       company: "Freelance",
@@ -198,23 +181,11 @@ export const DATA = {
       logoUrl: "",
       start: "Aug 2023",
       end: "Aug 2023",
-      description: (
-        <ul className="ml-1">
-          <li>
-            &#x2022; Edited a short film for a corporate client, delivering a
-            polished final cut that aligned with the company's brand identity
-            and messaging.
-          </li>
-          <li>
-            &#x2022; Applied narrative editing techniques to build a compelling
-            visual story, from raw footage to finished film.
-          </li>
-          <li>
-            &#x2022; Project scope and specific deliverables are kept
-            confidential per the terms of the work agreement.
-          </li>
-        </ul>
-      ),
+      description: [
+        "Edited a short film for a corporate client, delivering a polished final cut that aligned with the company's brand identity and messaging.",
+        "Applied narrative editing techniques to build a compelling visual story, from raw footage to finished film.",
+        "Project scope and specific deliverables are kept confidential per the terms of the work agreement.",
+      ],
     },
     {
       company: "CV. Natusi",
@@ -225,26 +196,11 @@ export const DATA = {
       logoUrl: "",
       start: "Jan 2021",
       end: "Jun 2021",
-      description: (
-        <ul className="ml-1">
-          <li>
-            &#x2022; Built a payroll web application automating 5 salary
-            components (base salary, overtime, bonuses, allowances, and PPh 21
-            tax calculation), reducing manual calculation steps by an estimated
-            70%.
-          </li>
-          <li>
-            &#x2022; Designed 3 UI/UX prototypes in Figma (news portal,
-            law-enforcement complaint page, mobile golf app). All approved by
-            stakeholders on the first design cycle with 100% client sign-off.
-          </li>
-          <li>
-            &#x2022; Collaborated with system analysts on structured weekly
-            design reviews, and supported IT infrastructure tasks including
-            router configuration, LAN cabling, and CCTV installation.
-          </li>
-        </ul>
-      ),
+      description: [
+        "Built a payroll web application automating 5 salary components (base salary, overtime, bonuses, allowances, and PPh 21 tax calculation), reducing manual calculation steps by an estimated 70%.",
+        "Designed 3 UI/UX prototypes in Figma (news portal, law-enforcement complaint page, mobile golf app). All approved by stakeholders on the first design cycle with 100% client sign-off.",
+        "Collaborated with system analysts on structured weekly design reviews, and supported IT infrastructure tasks including router configuration, LAN cabling, and CCTV installation.",
+      ],
     },
   ],
   education: [

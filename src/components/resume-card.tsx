@@ -14,7 +14,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: React.ReactNode;
+  description?: React.ReactNode | string[];
   disabled?: boolean;
 }
 const ResumeCardComponent = ({
@@ -98,7 +98,17 @@ const ResumeCardComponent = ({
                   aria-hidden={!isExpanded}
                 >
                   <div className="overflow-hidden">
-                    <div className="mt-2 leading-relaxed">{description}</div>
+                    <div className="mt-2 leading-relaxed">
+                      {Array.isArray(description) ? (
+                        <ul className="ml-4 space-y-1 list-disc">
+                          {description.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        description
+                      )}
+                    </div>
                   </div>
                 </div>
               )}
