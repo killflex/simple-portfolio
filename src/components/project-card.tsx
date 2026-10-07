@@ -47,7 +47,7 @@ const ProjectCardComponent = ({
   const uniqueImage2 = `${image2}?v=${Date.now()}`;
   return (
     <Card
-      className={"flex flex-col overflow-hidden border"}
+      className={"flex flex-col overflow-hidden border h-full"}
       role="article"
       aria-labelledby={`project-${title.replace(/\s+/g, "-").toLowerCase()}`}
     >
@@ -65,7 +65,7 @@ const ProjectCardComponent = ({
             muted
             playsInline
             aria-label={`${title} project demo video`}
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
           />
         )}
         {image && (
@@ -104,7 +104,7 @@ const ProjectCardComponent = ({
       </Link>
       {description ? (
         <>
-          <CardHeader className="px-4 py-3">
+          <CardHeader className="px-4 py-3 flex-none">
             <div className="space-y-1">
               <CardTitle
                 id={`project-${title.replace(/\s+/g, "-").toLowerCase()}`}
@@ -120,10 +120,10 @@ const ProjectCardComponent = ({
               </div>
             </div>
           </CardHeader>
-          <CardContent className="flex flex-col px-4">
+          <CardContent className="flex flex-col px-4 grow">
             {tags && tags.length > 0 && (
               <div
-                className="flex gap-1 overflow-x-auto pb-1"
+                className="flex flex-wrap gap-1 pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -131,7 +131,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -142,7 +142,7 @@ const ProjectCardComponent = ({
         </>
       ) : (
         <>
-          <CardHeader className="px-4 mt-3 mb-1.5">
+          <CardHeader className="px-4 mt-3 mb-1.5 flex-none">
             <div className="space-y-1">
               <CardTitle
                 id={`project-${title.replace(/\s+/g, "-").toLowerCase()}`}
@@ -155,10 +155,10 @@ const ProjectCardComponent = ({
               </time>
             </div>
           </CardHeader>
-          <CardContent className="flex flex-col px-4">
+          <CardContent className="flex flex-col px-4 grow">
             {tags && tags.length > 0 && (
               <div
-                className="flex gap-1 overflow-x-auto pb-1"
+                className="flex flex-wrap gap-1 pb-1"
                 role="list"
                 aria-label="Technologies used"
               >
@@ -166,7 +166,7 @@ const ProjectCardComponent = ({
                   <span
                     key={tag}
                     role="listitem"
-                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border bg-foreground-muted px-2 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                    className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md border bg-muted px-2 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
                   >
                     {tag}
                   </span>
@@ -177,7 +177,7 @@ const ProjectCardComponent = ({
         </>
       )}
 
-      <CardFooter className="px-4 pb-3 pt-2">
+      <CardFooter className="px-4 pb-3 pt-2 flex-none">
         {links && links.length > 0 && (
           <div
             className="flex flex-row flex-wrap items-start gap-1"
