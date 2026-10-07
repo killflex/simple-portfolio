@@ -149,7 +149,7 @@ export function DownloadCvModal({
 
                   <div className="space-y-1">
                     <h4 className="text-sm font-bold text-foreground">
-                      CV Designer
+                      CV Creative
                     </h4>
                     <p className="text-xs text-muted-foreground leading-snug line-clamp-3">
                       {DATA.cv.designer.description}

@@ -143,7 +143,7 @@ export const DATA = {
         "Cinema 4D",
       ],
       location: "Remote",
-      title: "3D Motion Designer & Video Editor",
+      title: "Motion Designer & Video Editor",
       logoUrl: "",
       start: "Mar 2019",
       end: "Nov 2023",
@@ -319,7 +319,7 @@ export const DATA = {
     },
     {
       title: "Expense Kernel",
-      href: "",
+      href: "https://github.com/killflex/expense-kernel",
       dates: "",
       active: true,
       description: "Custom PHP framework based expense tracking application.",
@@ -339,7 +339,7 @@ export const DATA = {
     },
     {
       title: "Penggajian",
-      href: "",
+      href: "https://github.com/killflex/payroll-management-system",
       dates: "",
       active: true,
       description:
@@ -381,7 +381,7 @@ export const DATA = {
     },
     {
       title: "Lost & Found Fasilkom",
-      href: "",
+      href: "https://github.com/killflex/lostnfound",
       dates: "",
       active: true,
       description:
@@ -423,7 +423,7 @@ export const DATA = {
     },
     {
       title: "MyBookshelf API",
-      href: "",
+      href: "https://github.com/killflex/mybookshelf-api",
       dates: "",
       active: true,
       description: "RESTful API for book management and tracking.",
@@ -512,7 +512,7 @@ export const DATA = {
     },
     {
       title: "Undergraduate Thesis Project",
-      href: "",
+      href: "https://github.com/killflex/realtime-attendance-mobile",
       dates: "",
       active: true,
       description:
@@ -562,7 +562,7 @@ export const DATA = {
 
     {
       title: "Wonokromo Profile Video",
-      href: "",
+      href: "https://youtu.be/EK0UBOLrl0E?si=P2zsDp1tH8w2H3Z1",
       dates: "",
       active: true,
       description: "Official profile video production for Wonokromo district.",
@@ -582,7 +582,7 @@ export const DATA = {
     },
     {
       title: "Nike Air Max 1",
-      href: "",
+      href: "https://youtu.be/xtRYglqMs8g?si=jna-PkkSXH9wBh7Z",
       dates: "",
       active: true,
       description: "Conceptual commercial motion graphics for Nike.",
@@ -602,7 +602,7 @@ export const DATA = {
     },
     {
       title: "Villain Vibes Music Video",
-      href: "",
+      href: "https://x.com/iamkillflex/status/1553772127429758976",
       dates: "",
       active: true,
       description:
@@ -628,7 +628,7 @@ export const DATA = {
     },
     {
       title: "pop up ナイキ (NIKE)",
-      href: "",
+      href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
       dates: "",
       active: true,
       description: "Conceptual 3D popup motion design for NIKE shoes.",
@@ -653,7 +653,7 @@ export const DATA = {
     },
     {
       title: "Goldenrods",
-      href: "",
+      href: "https://youtube.com/shorts/pnyg8gxXmFE?si=cEM8Eb0McC41wzBt",
       dates: "",
       active: true,
       description: "Abstract 3D motion graphics exploring golden aesthetics.",
@@ -678,7 +678,7 @@ export const DATA = {
     },
     {
       title: "Abstract Loop",
-      href: "",
+      href: "https://youtube.com/shorts/kpCuDKJ-2bs?si=27-aJjBw68TDJ5Cc",
       dates: "",
       active: true,
       description: "Abstract 3D loop animation and visual experimentation.",
@@ -703,7 +703,7 @@ export const DATA = {
     },
     {
       title: "Tote Bag WDD",
-      href: "",
+      href: "https://drive.google.com/drive/folders/145fblLn3YomqSQtbRY1VXURL9deu50aT?usp=sharing",
       dates: "",
       active: true,
       description: "",
@@ -724,7 +724,7 @@ export const DATA = {
 
     {
       title: "Buku Kampung Majapahit",
-      href: "https://www.instagram.com/p/CUZ97EhAL5j",
+      href: "https://drive.google.com/drive/folders/1am6w3n9VrXqHv2s6GwD19e0ob4Fgy4Ut?usp=sharing",
       dates: "",
       active: true,
       description: "",
@@ -770,7 +770,7 @@ export const DATA = {
     },
     {
       title: "NOBODY",
-      href: "",
+      href: "https://www.instagram.com/p/CRk7wVPruNa",
       dates: "",
       active: true,
       description: "",
@@ -779,7 +779,7 @@ export const DATA = {
       links: [
         {
           type: "Instagram",
-          href: "https://www.instagram.com/p/CRk7wVPruNa/",
+          href: "https://www.instagram.com/p/CRk7wVPruNa",
           icon: <Icons.instagram className="size-3" />,
         },
         {
@@ -848,7 +848,7 @@ export const DATA = {
     },
     {
       title: "Abstract Green",
-      href: "",
+      href: "https://x.com/iamkillflex/status/1621806215100764161",
       dates: "",
       active: true,
       description: "",
@@ -868,7 +868,7 @@ export const DATA = {
     },
     {
       title: "NIKE AIRMAX 1",
-      href: "",
+      href: "https://x.com/iamkillflex/status/1544138998737764354",
       dates: "",
       active: true,
       description: "",
@@ -914,7 +914,7 @@ export const DATA = {
     },
     {
       title: "DualSense",
-      href: "",
+      href: "https://www.instagram.com/p/CWs3i5Avq2l/",
       dates: "",
       active: true,
       description: "",
@@ -939,7 +939,7 @@ export const DATA = {
     },
     {
       title: "Nobita Room",
-      href: "",
+      href: "https://x.com/iamkillflex/status/1543757734595760128",
       dates: "",
       active: true,
       description: "",

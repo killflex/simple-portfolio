@@ -13,13 +13,13 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col min-h-dvh space-y-4 max-w-4xl mx-auto w-full px-6">
+    <main className="flex flex-col min-h-dvh space-y-4 max-w-4xl mx-auto w-full">
       <div>
         <Link
           href="/"
           className={cn(
             buttonVariants({ variant: "ghost", size: "sm" }),
-            "gap-2 rounded-lg text-xs text-muted-foreground hover:text-foreground px-3 mb-6",
+            "gap-2 rounded-lg text-xs text-muted-foreground hover:text-foreground px-3 mb-4",
           )}
           aria-label="Back to home"
         >
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           </h2>
           <p className="text-muted-foreground text-xs sm:text-sm">
             A comprehensive showcase of web applications, mobile applications,
-            machine learning systems, motion graphics, and 3D visual designs.
+            machine learning systems, motion design, and 3D visual.
           </p>
         </div>
       </div>
