@@ -73,7 +73,7 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
       </div>
       <div
         id="projects-grid"
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 max-w-2xl mx-auto"
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 w-full"
         role="tabpanel"
         aria-label={`${activeCategory} projects`}
         aria-live="polite"
