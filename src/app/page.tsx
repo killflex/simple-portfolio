@@ -18,7 +18,6 @@ import {
   MailIcon,
   PaletteIcon,
   SmartphoneIcon,
-  SparklesIcon,
   UserRound,
 } from "lucide-react";
 import Link from "next/link";
@@ -73,9 +72,9 @@ export default function Page() {
               </p>
 
               <p className="max-w-xl text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Bridging software engineering with cinematic motion design. I
-                build scalable, blazingly fast web applications with rich visual
-                craft and interactive depth.
+                I build scalable web applications using React, Next.js,
+                TypeScript, and PostgreSQL. Also create motion graphics and 3D
+                visuals.
               </p>
 
               <div className="flex flex-wrap items-center gap-2.5 pt-1">
@@ -111,10 +110,6 @@ export default function Page() {
         className="space-y-4"
       >
         <div className="space-y-2 text-left">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-muted text-muted-foreground">
-            <SparklesIcon className="size-3 text-muted-foreground" />
-            Curated Showcase
-          </div>
           <h2
             id="projects-heading"
             className="text-2xl font-bold tracking-tight sm:text-3xl"
@@ -538,7 +533,7 @@ export default function Page() {
             id="contact-heading"
             className="text-2xl sm:text-4xl font-bold tracking-tight"
           >
-            Let&apos;s Build Something Extraordinary
+            Let&apos;s Work Together
           </h2>
           <p className="mx-auto max-w-lg text-xs sm:text-sm text-muted-foreground leading-relaxed">
             Have a project in mind, looking to hire, or just want to connect?
