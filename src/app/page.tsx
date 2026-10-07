@@ -50,11 +50,14 @@ export default function Page() {
           <div className="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-center gap-6">
             <div className="flex flex-col flex-1 space-y-3 justify-center items-start">
               <div
-                className="inline-flex items-center gap-2 px-3 py-1.5 border border-border/60 text-xs font-medium text-muted-foreground"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/60 text-xs font-medium text-muted-foreground"
                 role="status"
                 aria-live="polite"
               >
-                <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                </span>
                 Available for work
               </div>
 
