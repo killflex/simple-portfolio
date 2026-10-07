@@ -82,11 +82,11 @@ export default function Page() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="rounded-lg cursor-pointer font-medium gap-1.5 shadow-sm"
+                  className="rounded px-4 cursor-pointer text-sm border-border font-medium hover:bg-muted/80"
                   asChild
                 >
                   <Link href="#contact" aria-label="Contact Ferry Hasan">
-                    <MailIcon className="size-3.5 text-muted-foreground" />
+                    <MailIcon className="size-4 text-muted-foreground" />
                     Contact Me
                   </Link>
                 </Button>
@@ -117,9 +117,7 @@ export default function Page() {
             Projects by Category
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground">
-            Directly browse selected works across full-stack web engineering,
-            mobile development, machine learning, motion design, and 3D visual
-            concepts.
+            A collection of my work in engineering and creative media.
           </p>
         </div>
 
