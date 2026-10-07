@@ -83,8 +83,8 @@
   /* black */
   --accent-foreground: oklch(0 0 0);
 
-  /* zinc-300 */
-  --border: oklch(0.90 0.003 286);
+  /* zinc-200 */
+  --border: oklch(0.94 0.002 286);
 
   --edge: color-mix(in oklab, var(--border) 64%, var(--background));
 

@@ -565,7 +565,7 @@ export const DATA = {
       href: "https://youtu.be/EK0UBOLrl0E?si=P2zsDp1tH8w2H3Z1",
       dates: "",
       active: true,
-      description: "Official profile video production for Wonokromo district.",
+      description: "",
       technologies: ["Premiere Pro", "Videographer", "Voice Over"],
       category: ["Motion"],
       links: [
@@ -581,11 +581,11 @@ export const DATA = {
       design: "",
     },
     {
-      title: "Nike Air Max 1",
+      title: "Conceptual Commercial Nike Air Max 1",
       href: "https://youtu.be/xtRYglqMs8g?si=jna-PkkSXH9wBh7Z",
       dates: "",
       active: true,
-      description: "Conceptual commercial motion graphics for Nike.",
+      description: "",
       technologies: ["Blender", "After Effects", "Photoshop"],
       category: ["Motion"],
       links: [
@@ -605,8 +605,7 @@ export const DATA = {
       href: "https://x.com/iamkillflex/status/1553772127429758976",
       dates: "",
       active: true,
-      description:
-        "Louverture x Trickywi x Shirobeats - Villain Vibes Music Video.",
+      description: "",
       technologies: ["After Effects", "Blender"],
       category: ["Motion"],
       links: [
@@ -631,7 +630,7 @@ export const DATA = {
       href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
       dates: "",
       active: true,
-      description: "Conceptual 3D popup motion design for NIKE shoes.",
+      description: "",
       technologies: ["Cinema 4D", "After Effects"],
       category: ["Motion"],
       links: [
@@ -656,7 +655,7 @@ export const DATA = {
       href: "https://youtube.com/shorts/pnyg8gxXmFE?si=cEM8Eb0McC41wzBt",
       dates: "",
       active: true,
-      description: "Abstract 3D motion graphics exploring golden aesthetics.",
+      description: "",
       technologies: ["Cinema 4D", "After Effects"],
       category: ["Motion"],
       links: [
@@ -681,7 +680,7 @@ export const DATA = {
       href: "https://youtube.com/shorts/kpCuDKJ-2bs?si=27-aJjBw68TDJ5Cc",
       dates: "",
       active: true,
-      description: "Abstract 3D loop animation and visual experimentation.",
+      description: "",
       technologies: ["Cinema 4D", "After Effects"],
       category: ["Motion"],
       links: [
