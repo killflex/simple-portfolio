@@ -54,7 +54,7 @@ const AvatarImage = React.forwardRef<
         src={src}
         alt={alt}
         fill
-        sizes="128px"
+        sizes="256px"
         priority
         className={cn(
           "object-cover transition-opacity duration-75 ease-out",
