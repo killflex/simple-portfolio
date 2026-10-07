@@ -89,9 +89,6 @@ export function DownloadCvModal({
 
             {/* Header */}
             <div className="space-y-1.5 pr-6 text-left">
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-primary/10 text-primary">
-                Curriculum Vitae
-              </div>
               <h3
                 id="cv-modal-title"
                 className="text-xl font-bold tracking-tight text-foreground"
@@ -115,9 +112,6 @@ export function DownloadCvModal({
                     <div className="flex size-9 items-center justify-center rounded-lg border border-muted-500/20">
                       <Code2Icon className="size-4.5" />
                     </div>
-                    <span className="rounded-full bg-muted border border-muted-500/20 px-2 py-0.5 text-[10px] font-medium">
-                      {DATA.cv.fullstack.badge}
-                    </span>
                   </div>
 
                   <div className="space-y-1">
@@ -151,9 +145,6 @@ export function DownloadCvModal({
                     <div className="flex size-9 items-center justify-center rounded-lg border border-muted-500/20">
                       <PaletteIcon className="size-4.5" />
                     </div>
-                    <span className="rounded-full bg-muted border border-muted-500/20 px-2 py-0.5 text-[10px] font-medium">
-                      {DATA.cv.designer.badge}
-                    </span>
                   </div>
 
                   <div className="space-y-1">

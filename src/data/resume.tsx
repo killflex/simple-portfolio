@@ -13,14 +13,12 @@ export const DATA = {
   cv: {
     fullstack: {
       title: "CV Full Stack Developer",
-      badge: "Engineering",
       description:
         "React, Next.js, TypeScript, Laravel, Node.js, PostgreSQL, Docker & REST APIs",
       url: "https://drive.google.com/file/d/1u3cjw7fyCuDwRjLI7MrEWMH_RdPnaHIE/view?usp=sharing",
     },
     designer: {
       title: "CV Motion & 3D Designer",
-      badge: "Creative & 3D",
       description:
         "Motion Graphics, 3D Art, Video Editing, Blender, Cinema 4D, Octane & After Effects",
       url: "https://drive.google.com/file/d/1xPM5oNv4tsD3pqyMN6vod6ih_F8f786l/view?usp=sharing",
