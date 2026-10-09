@@ -1,4 +1,7 @@
+"use client";
+
 import { DATA } from "@/data/resume";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function SocialLinks() {
@@ -37,18 +40,24 @@ export default function SocialLinks() {
       aria-label="Social media profiles"
     >
       {socials.map((social) => (
-        <Link
+        <motion.div
           key={social.name}
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          role="listitem"
-          className="inline-flex items-center justify-center h-7 px-3 rounded-full text-xs font-medium text-muted-foreground hover:text-foreground bg-muted/50 hover:bg-muted border border-border/50 gap-1.5"
-          aria-label={`Visit my ${social.name} profile (opens in new tab)`}
+          whileHover={{ y: -1 }}
+          whileTap={{ scale: 0.96 }}
+          transition={{ duration: 0.15 }}
         >
-          <social.icon className="size-3.5 shrink-0" />
-          <span>{social.name}</span>
-        </Link>
+          <Link
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            className="inline-flex items-center justify-center h-7 px-3 rounded-full text-xs font-medium text-muted-foreground hover:text-foreground bg-muted/50 hover:bg-muted border border-border/50 gap-1.5 transition-colors"
+            aria-label={`Visit my ${social.name} profile (opens in new tab)`}
+          >
+            <social.icon className="size-3.5 shrink-0" />
+            <span>{social.name}</span>
+          </Link>
+        </motion.div>
       ))}
     </div>
   );

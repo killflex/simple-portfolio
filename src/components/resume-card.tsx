@@ -2,6 +2,7 @@
 
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React, { memo } from "react";
@@ -17,6 +18,7 @@ interface ResumeCardProps {
   description?: React.ReactNode | string[];
   disabled?: boolean;
 }
+
 const ResumeCardComponent = ({
   title,
   subtitle,
@@ -54,24 +56,29 @@ const ResumeCardComponent = ({
                   <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                     {title}
 
-                    <ChevronRightIcon
-                      className={cn(
-                        "size-4 translate-x-0 transform transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                        isExpanded ? "rotate-90" : "rotate-0"
-                      )}
-                      aria-hidden="true"
-                    />
+                    <motion.span
+                      animate={{ rotate: isExpanded ? 90 : 0 }}
+                      transition={{ duration: 0.22, ease: "easeOut" }}
+                      className="inline-flex items-center ml-0.5"
+                    >
+                      <ChevronRightIcon
+                        className="size-4 translate-x-0 transform transition-transform duration-200 ease-out group-hover:translate-x-0.5"
+                        aria-hidden="true"
+                      />
+                    </motion.span>
                   </h3>
-                  <div className="text-xs sm:text-sm tabular-nums text-right">
+                  <div className="text-xs sm:text-sm tabular-nums text-right text-muted-foreground">
                     {period}
                   </div>
                 </div>
                 {subtitle && (
-                  <div className="font-sans text-xs">{subtitle}</div>
+                  <div className="font-sans text-xs text-muted-foreground">
+                    {subtitle}
+                  </div>
                 )}
                 {badges && (
                   <div
-                    className="flex flex-row flex-wrap gap-1"
+                    className="flex flex-row flex-wrap gap-1 mt-0.5"
                     role="list"
                     aria-label="Technologies used"
                   >
@@ -79,7 +86,7 @@ const ResumeCardComponent = ({
                       <span
                         key={index}
                         role="listitem"
-                        className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                        className="inline-flex items-center rounded-lg border bg-muted/60 px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                       >
                         {badge}
                       </span>
@@ -87,18 +94,17 @@ const ResumeCardComponent = ({
                   </div>
                 )}
               </CardHeader>
-              {description && (
-                <div
-                  className={cn(
-                    "grid text-xs sm:text-sm transition-[opacity,grid-template-rows] duration-300 ease-in-out",
-                    isExpanded
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
-                  )}
-                  aria-hidden={!isExpanded}
-                >
-                  <div className="overflow-hidden">
-                    <div className="mt-2 leading-relaxed">
+              <AnimatePresence initial={false}>
+                {description && isExpanded && (
+                  <motion.div
+                    key="content"
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+                    className="overflow-hidden text-xs sm:text-sm"
+                  >
+                    <div className="mt-2 leading-relaxed text-muted-foreground">
                       {Array.isArray(description) ? (
                         <ul className="ml-4 space-y-1 list-disc">
                           {description.map((item, index) => (
@@ -109,9 +115,9 @@ const ResumeCardComponent = ({
                         description
                       )}
                     </div>
-                  </div>
-                </div>
-              )}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </Card>
         </Link>
@@ -132,7 +138,7 @@ const ResumeCardComponent = ({
                         <span
                           key={index}
                           role="listitem"
-                          className="inline-flex items-center rounded-lg border bg-foreground-muted px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
+                          className="inline-flex items-center rounded-lg border bg-muted/60 px-1.5 py-0.5 font-mono text-xs font-medium text-muted-foreground"
                         >
                           {badge}
                         </span>
@@ -140,11 +146,15 @@ const ResumeCardComponent = ({
                     </span>
                   )}
                 </h3>
-                <div className="text-xs sm:text-sm tabular-nums text-right">
+                <div className="text-xs sm:text-sm tabular-nums text-right text-muted-foreground">
                   {period}
                 </div>
               </div>
-              {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+              {subtitle && (
+                <div className="font-sans text-xs text-muted-foreground">
+                  {subtitle}
+                </div>
+              )}
             </CardHeader>
           </div>
         </Card>

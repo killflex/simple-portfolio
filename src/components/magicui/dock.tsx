@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import React, { PropsWithChildren, useRef, useState } from "react";
+import React, { PropsWithChildren } from "react";
 
 export interface DockIconProps {
   size?: number;
@@ -14,47 +14,15 @@ export interface DockIconProps {
   props?: PropsWithChildren;
 }
 
-const DEFAULT_MAGNIFICATION = 60;
-const DEFAULT_DISTANCE = 140;
-
-// Define DockIcon first so it can be referenced by Dock
 const DockIcon = ({
-  size,
-  magnification = DEFAULT_MAGNIFICATION,
-  distance = DEFAULT_DISTANCE,
-  mouseX,
   className,
   children,
   ...props
 }: DockIconProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  // Calculate width based on mouse proximity
-  const getWidth = () => {
-    if (!ref.current || mouseX === undefined || mouseX === Infinity) return 40;
-    
-    const bounds = ref.current.getBoundingClientRect();
-    const distanceFromMouse = mouseX - bounds.x - bounds.width / 2;
-    const absDistance = Math.abs(distanceFromMouse);
-    
-    if (absDistance > distance) return 40;
-    
-    // Linear interpolation
-    const ratio = 1 - absDistance / distance;
-    return 40 + (magnification - 40) * ratio;
-  };
-
-  const width = getWidth();
-
   return (
     <div
-      ref={ref}
-      style={{ 
-        width: `${width}px`,
-        transition: "width 0.2s ease-out"
-      }}
       className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full",
+        "flex size-10 aspect-square cursor-pointer items-center justify-center rounded-full",
         className
       )}
       {...props}
@@ -66,7 +34,6 @@ const DockIcon = ({
 
 DockIcon.displayName = "DockIcon";
 
-// Now define Dock interfaces and component
 export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string;
   magnification?: number;
@@ -79,41 +46,14 @@ const dockVariants = cva(
 );
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
-  (
-    {
-      className,
-      children,
-      magnification = DEFAULT_MAGNIFICATION,
-      distance = DEFAULT_DISTANCE,
-      ...props
-    },
-    ref
-  ) => {
-    const [mouseX, setMouseX] = useState<number>(Infinity);
-
-    const renderChildren = () => {
-      return React.Children.map(children, (child: any) => {
-        // Only pass mouseX to DockIcon components
-        if (React.isValidElement(child) && child.type === DockIcon) {
-          return React.cloneElement(child, {
-            mouseX,
-            magnification,
-            distance,
-          } as DockIconProps);
-        }
-        return child;
-      });
-    };
-
+  ({ className, children, ...props }, ref) => {
     return (
       <div
         ref={ref}
-        onMouseMove={(e) => setMouseX(e.pageX)}
-        onMouseLeave={() => setMouseX(Infinity)}
         {...props}
         className={cn(dockVariants({ className }))}
       >
-        {renderChildren()}
+        {children}
       </div>
     );
   }

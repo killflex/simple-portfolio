@@ -1,7 +1,6 @@
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ModeToggle } from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
   TooltipContent,
@@ -43,41 +42,6 @@ export default function Navbar() {
             </Tooltip>
           </DockIcon>
         ))}
-        {/* <Separator
-          orientation="vertical"
-          className="h-full"
-          aria-hidden="true"
-        /> */}
-        {/* {Object.entries(DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .map(([name, social]) => (
-            <DockIcon key={name}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    aria-label={`Visit my ${name} profile (opens in new tab)`}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "sm" }),
-                      "size-12 hover:bg-transparent"
-                    )}
-                  >
-                    <social.icon className="size-4" aria-hidden="true" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))} */}
-        {/* <Separator
-          orientation="vertical"
-          className="h-full py-2"
-          aria-hidden="true"
-        /> */}
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>

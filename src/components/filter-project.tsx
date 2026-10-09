@@ -1,4 +1,5 @@
 "use client";
+
 import { ProjectCard } from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
@@ -71,6 +72,7 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
           </Button>
         ))}
       </div>
+
       <div
         id="projects-grid"
         className="grid grid-cols-1 gap-4 sm:grid-cols-2 w-full"
@@ -81,8 +83,8 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
         {filteredData.length > 0 ? (
           filteredData.map((project) => (
             <ProjectCard
-              href={project.href}
               key={`${project.title}-${project.category}`}
+              href={project.href}
               title={project.title}
               description={project.description}
               dates={project.dates}

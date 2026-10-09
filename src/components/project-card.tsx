@@ -44,11 +44,9 @@ const ProjectCardComponent = ({
   links,
   className,
 }: Props) => {
-  const uniqueImage1 = `${image}?v=${Date.now()}`;
-  const uniqueImage2 = `${image2}?v=${Date.now()}`;
   return (
     <Card
-      className={"flex flex-col overflow-hidden border h-full"}
+      className="flex flex-col overflow-hidden border h-full"
       role="article"
       aria-labelledby={`project-${title.replace(/\s+/g, "-").toLowerCase()}`}
     >
@@ -72,7 +70,7 @@ const ProjectCardComponent = ({
               width={1920}
               height={1080}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
-              className="w-full h-full object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110"
+              className="w-full h-full object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
             {image2 && (
               <Image
@@ -81,7 +79,7 @@ const ProjectCardComponent = ({
                 width={1920}
                 height={1080}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
-                className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:scale-105"
               />
             )}
           </div>
@@ -93,7 +91,7 @@ const ProjectCardComponent = ({
               alt={`${title} project design`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
-              className="object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110"
+              className="object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-105"
             />
           </div>
         )}
