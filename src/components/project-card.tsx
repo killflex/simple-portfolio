@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { VideoPlayer } from "@/components/video-player";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,17 +59,12 @@ const ProjectCardComponent = ({
         aria-label={`View ${title} project details`}
       >
         {video && (
-          <video
+          <VideoPlayer
             src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            aria-label={`${title} project demo video`}
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+            ariaLabel={`${title} project demo video`}
           />
         )}
-        {image && (
+        {image && !video && (
           <div className="relative w-full aspect-video overflow-hidden group">
             <Image
               src={image}

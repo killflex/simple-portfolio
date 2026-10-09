@@ -9,19 +9,19 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/surabaya",
   description: "Full Stack Developer & Motion Designer",
   summary:
-    "I'am a Full-Stack Developer and Motion Designer based in Surabaya, Indonesia. I build web applications with React.js, Next.js, and Laravel, focusing on clean architecture, performance, and real-world deployment.\n\nBeyond engineering, I've spent years crafting motion design, video edits, and 3D visuals  for clients across industries. I bridge technical development with visual storytelling to create cohesive digital products.\n\nCurrently open to Full-Stack, Frontend, Backend, Motion Designer, Video Editor, and 3D Artist roles.",
+    "I'm a Full-Stack Developer and Motion Designer based in Surabaya, Indonesia. I build web applications with React, Next.js, and Laravel. Focusing on clean architecture, performance, and real-world deployment.\n\nBeyond engineering, I've spent years crafting motion design, video edits, and 3D visuals  for clients across industries. I bridge technical development with visual storytelling to create cohesive digital products.\n\nCurrently open to Full-Stack, Backend, Frontend, Motion Designer, Video Editor, and 3D Artist roles.",
   cv: {
     fullstack: {
       title: "CV Full Stack Developer",
       description:
         "React, Next.js, TypeScript, Laravel, Node.js, PostgreSQL, Docker & REST APIs",
-      url: "https://drive.google.com/file/d/1u3cjw7fyCuDwRjLI7MrEWMH_RdPnaHIE/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1ECqYXprMEHJvbvL-Yj91w9FLAQJcICr8/view?usp=drive_link",
     },
     designer: {
-      title: "CV Motion & 3D Designer",
+      title: "CV Motion & Video Editor",
       description:
-        "Motion Graphics, 3D Art, Video Editing, Blender, Cinema 4D, Octane & After Effects",
-      url: "https://drive.google.com/file/d/1xPM5oNv4tsD3pqyMN6vod6ih_F8f786l/view?usp=sharing",
+        "Motion Design, Video Editing, 3D Visual, Blender, Cinema 4D, After Effects & Premiere Pro",
+      url: "https://drive.google.com/file/d/19RdMHMzHmJHe1jzAFbr64yXIC4QJOhZ1/view?usp=sharing",
     },
   },
   cvurl:
@@ -204,60 +204,6 @@ export const DATA = {
     },
   ],
   categories: ["Web App", "Mobile App", "Machine Learning", "Motion", "Design"],
-  featuredProject: {
-    title: "PT. APIGS — Dynamic Corporate Platform",
-    company: "PT. IGS Indonesia Groups",
-    role: "Full Stack Developer Intern",
-    period: "Feb 2025 - Apr 2025",
-    description:
-      "Engineered and deployed a dynamic, high-performance corporate web platform for PT. APIGS. Handled end-to-end execution from modern UI/UX design and responsive front-end development to scalable PostgreSQL database architecture and Dockerized deployment.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Drizzle ORM",
-      "Docker",
-      "Framer Motion",
-      "Shadcn UI",
-    ],
-    metrics: [
-      {
-        value: "100%",
-        label: "Lighthouse Score",
-        highlight: "Performance & Best Practices",
-      },
-      {
-        value: "< 0.8s",
-        label: "Fast Load Time",
-        highlight: "First Contentful Paint",
-      },
-      {
-        value: "Grade A",
-        label: "GTmetrix Rating",
-        highlight: "Optimized Asset Delivery",
-      },
-      {
-        value: "100%",
-        label: "Responsive & SEO",
-        highlight: "Dynamic Server Components",
-      },
-    ],
-    image: "/projects/test-lighthouse.png",
-    image2: "/projects/test-gtmetrix.png",
-    links: [
-      {
-        type: "Lighthouse Report",
-        href: "/projects/test-lighthouse.png",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "GTmetrix Report",
-        href: "/projects/test-gtmetrix.png",
-        icon: <Icons.globe className="size-3" />,
-      },
-    ],
-  },
   certifications: [
     {
       title: "Junior Web Programmer",
@@ -426,7 +372,8 @@ export const DATA = {
       href: "https://github.com/killflex/mybookshelf-api",
       dates: "",
       active: true,
-      description: "RESTful API for book management and tracking.",
+      description:
+        "RESTful API for book management and tracking with Swagger for easy API exploration.",
       technologies: ["Express.js", "MongoDB", "Swagger UI"],
       category: ["Web App"],
       links: [
@@ -559,7 +506,6 @@ export const DATA = {
       video: "",
       design: "",
     },
-
     {
       title: "Wonokromo Profile Video",
       href: "https://youtu.be/EK0UBOLrl0E?si=P2zsDp1tH8w2H3Z1",
@@ -577,7 +523,7 @@ export const DATA = {
       ],
       image: "/projects/video-profile-wonokromo.webp",
       image2: "",
-      video: "",
+      video: "/videos/kkn65wonokromo.webm",
       design: "",
     },
     {
@@ -597,7 +543,7 @@ export const DATA = {
       ],
       image: "/projects/nike-airmax-commercial.webp",
       image2: "",
-      video: "",
+      video: "/videos/nikeairmax1.webm",
       design: "",
     },
     {
@@ -606,7 +552,7 @@ export const DATA = {
       dates: "",
       active: true,
       description: "",
-      technologies: ["After Effects", "Blender"],
+      technologies: ["Blender", "After Effects"],
       category: ["Motion"],
       links: [
         {
@@ -622,11 +568,36 @@ export const DATA = {
       ],
       image: "/projects/villainvibes-music-video.webp",
       image2: "",
-      video: "",
+      video: "/videos/villain_vibes.webm",
       design: "",
     },
     {
-      title: "pop up ナイキ (NIKE)",
+      title: "Sakura Vibes",
+      href: "https://www.youtube.com/watch?v=JAhaCXpjcmY",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CMoxKiisrCQ",
+          icon: <Icons.instagram className="size-3" />,
+        },
+        {
+          type: "Youtube",
+          href: "https://www.youtube.com/watch?v=JAhaCXpjcmY",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/sakuravibes.webm",
+      design: "",
+    },
+    {
+      title: "pop up ナイキ",
       href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
       dates: "",
       active: true,
@@ -635,19 +606,19 @@ export const DATA = {
       category: ["Motion"],
       links: [
         {
-          type: "Youtube",
-          href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
-          icon: <Icons.youtube className="size-3" />,
-        },
-        {
           type: "Twitter",
           href: "https://x.com/iamkillflex/status/1682982294079033344",
           icon: <Icons.x className="size-3" />,
         },
+        {
+          type: "Youtube",
+          href: "https://youtube.com/shorts/TBbrB6aMva0?si=2FcGrlwwrDIj7dqG",
+          icon: <Icons.youtube className="size-3" />,
+        },
       ],
-      image: "/projects/popup-nike.webp",
+      image: "",
       image2: "",
-      video: "",
+      video: "/videos/popnike.webm",
       design: "",
     },
     {
@@ -660,24 +631,114 @@ export const DATA = {
       category: ["Motion"],
       links: [
         {
-          type: "Youtube",
-          href: "https://youtube.com/shorts/pnyg8gxXmFE?si=cEM8Eb0McC41wzBt",
-          icon: <Icons.youtube className="size-3" />,
-        },
-        {
           type: "Twitter",
           href: "https://x.com/iamkillflex/status/1785656325168656876",
           icon: <Icons.x className="size-3" />,
         },
+        {
+          type: "Youtube",
+          href: "https://youtube.com/shorts/pnyg8gxXmFE?si=cEM8Eb0McC41wzBt",
+          icon: <Icons.youtube className="size-3" />,
+        },
       ],
       image: "/projects/golden-rods.webp",
       image2: "",
-      video: "",
+      video: "/videos/goldenrods.webm",
       design: "",
     },
     {
-      title: "Abstract Loop",
-      href: "https://youtube.com/shorts/kpCuDKJ-2bs?si=27-aJjBw68TDJ5Cc",
+      title: "[AMV] Space Tour",
+      href: "https://www.youtube.com/watch?v=sttcPo6B7WY",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CGhDkz2FVTE",
+          icon: <Icons.instagram className="size-3" />,
+        },
+        {
+          type: "Youtube",
+          href: "https://www.youtube.com/watch?v=sttcPo6B7WY",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/spacetour.webm",
+      design: "",
+    },
+    {
+      title: "[AMV] RESONANCE",
+      href: "https://www.youtube.com/watch?v=0oxsfMowUrc",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/CHU5D5WFrTA",
+          icon: <Icons.instagram className="size-3" />,
+        },
+        {
+          type: "Youtube",
+          href: "https://www.youtube.com/watch?v=0oxsfMowUrc",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/resonance.webm",
+      design: "",
+    },
+    {
+      title: "Galaxy Phone VFX",
+      href: "https://drive.google.com/drive/folders/1gB2DYb_TrHnuftBzmef3mXYRZD4BHtEX?usp=sharing",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Google Drive",
+          href: "https://drive.google.com/drive/folders/1gB2DYb_TrHnuftBzmef3mXYRZD4BHtEX?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/galaxy_phone.webm",
+      design: "",
+    },
+    {
+      title: "RTX Phone VFX",
+      href: "https://drive.google.com/drive/folders/1gB2DYb_TrHnuftBzmef3mXYRZD4BHtEX?usp=sharing",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["Blender", "After Effects", "Element 3D"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Google Drive",
+          href: "https://drive.google.com/drive/folders/1gB2DYb_TrHnuftBzmef3mXYRZD4BHtEX?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/rtxphone.webm",
+      design: "",
+    },
+    {
+      title: "Kolong Meja",
+      href: "https://drive.google.com/drive/folders/1P5yfRSbLW8UPgoGDVBGl_bDWTsvj-qze?usp=sharing",
       dates: "",
       active: true,
       description: "",
@@ -685,19 +746,39 @@ export const DATA = {
       category: ["Motion"],
       links: [
         {
-          type: "Youtube",
-          href: "https://youtube.com/shorts/kpCuDKJ-2bs?si=27-aJjBw68TDJ5Cc",
-          icon: <Icons.youtube className="size-3" />,
-        },
-        {
-          type: "Twitter",
-          href: "https://x.com/iamkillflex/status/1682397475267813378",
-          icon: <Icons.x className="size-3" />,
+          type: "Google Drive",
+          href: "https://drive.google.com/drive/folders/1P5yfRSbLW8UPgoGDVBGl_bDWTsvj-qze?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      image: "/projects/abstract-loop.webp",
+      image: "",
       image2: "",
-      video: "",
+      video: "/videos/kolongmeja.webm",
+      design: "",
+    },
+    {
+      title: "Ball Plastic",
+      href: "https://www.instagram.com/p/DABTQzwBYdG/",
+      dates: "",
+      active: true,
+      description: "",
+      technologies: ["Blender", "After Effects"],
+      category: ["Motion"],
+      links: [
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/p/DABTQzwBYdG",
+          icon: <Icons.instagram className="size-3" />,
+        },
+        {
+          type: "Youtube",
+          href: "https://www.youtube.com/shorts/dQBpI_LN6nA",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "",
+      image2: "",
+      video: "/videos/ball_plastic.webm",
       design: "",
     },
     {

@@ -42,7 +42,7 @@ function FilterProjectContent({ defaultCategory }: FilterProjectContentProps) {
   }, []);
 
   return (
-    <div className="space-y-8 w-full py-4">
+    <div className="space-y-8 w-full">
       <div
         className="flex flex-row flex-wrap justify-center items-center max-w-2xl gap-2 mx-auto"
         role="tablist"

@@ -9,15 +9,10 @@ import {
   ArrowRightIcon,
   AwardIcon,
   BriefcaseIcon,
-  ClapperboardIcon,
   Code2Icon,
-  CpuIcon,
   ExternalLinkIcon,
-  GlobeIcon,
   GraduationCapIcon,
   MailIcon,
-  PaletteIcon,
-  SmartphoneIcon,
   UserRound,
 } from "lucide-react";
 import Link from "next/link";
@@ -72,9 +67,8 @@ export default function Page() {
               </p>
 
               <p className="max-w-xl text-sm sm:text-base text-muted-foreground leading-relaxed">
-                I build scalable web applications using React, Next.js,
-                TypeScript, and Laravel. Also create motion graphics and 3D
-                visuals.
+                I build scalable web applications using React, Next.js, and
+                Laravel. Also create motion graphics and 3D visuals.
               </p>
 
               <div className="flex flex-wrap items-center gap-2.5 pt-1">
@@ -117,8 +111,8 @@ export default function Page() {
             Projects by Category
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground">
-            Selected works across full-stack web engineering, mobile
-            development, machine learning, motion design, and 3D visual.
+            Selected works across web engineering, mobile development, machine
+            learning, motion design, and 3D visual.
           </p>
         </div>
 
@@ -127,13 +121,12 @@ export default function Page() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
-                <GlobeIcon className="size-4 text-muted-foreground" />
                 <h3 className="text-base sm:text-lg font-bold">
                   Web Applications
                 </h3>
               </div>
               <Link
-                href="/projects?category=Website"
+                href="/projects?category=Web App"
                 className="group inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-primary"
               >
                 See all
@@ -163,13 +156,12 @@ export default function Page() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
-                <SmartphoneIcon className="size-4 text-muted-foreground" />
                 <h3 className="text-base sm:text-lg font-bold">
                   Mobile Applications
                 </h3>
               </div>
               <Link
-                href="/projects?category=Mobile"
+                href="/projects?category=Mobile App"
                 className="group inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-primary"
               >
                 See all
@@ -199,13 +191,12 @@ export default function Page() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
-                <CpuIcon className="size-4 text-muted-foreground" />
                 <h3 className="text-base sm:text-lg font-bold">
-                  Machine Learning &amp; AI
+                  AI &amp; Machine Learning
                 </h3>
               </div>
               <Link
-                href="/projects?category=ML"
+                href="/projects?category=Machine Learning"
                 className="group inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-primary"
               >
                 See all
@@ -235,7 +226,6 @@ export default function Page() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
-                <ClapperboardIcon className="size-4 text-muted-foreground" />
                 <h3 className="text-base sm:text-lg font-bold">
                   Motion Design &amp; Visual FX
                 </h3>
@@ -271,7 +261,6 @@ export default function Page() {
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b pb-2">
               <div className="flex items-center gap-2">
-                <PaletteIcon className="size-4 text-muted-foreground" />
                 <h3 className="text-base sm:text-lg font-bold">
                   3D Art &amp; Design
                 </h3>
@@ -328,7 +317,7 @@ export default function Page() {
             About Me
           </h2>
         </div>
-        <div className="flex flex-col max-w-full text-pretty font-sans text-xs sm:text-sm leading-relaxed text-muted-foreground gap-y-3">
+        <div className="flex flex-col max-w-full text-pretty font-sans text-muted leading-relaxed text-muted-foreground gap-y-3">
           <Markdown>{DATA.summary}</Markdown>
         </div>
       </section>
@@ -535,7 +524,7 @@ export default function Page() {
             Let&apos;s Work Together
           </h2>
           <p className="mx-auto max-w-lg text-xs sm:text-sm text-muted-foreground leading-relaxed">
-            Have a project in mind, looking to hire, or just want to connect?
+            Have a project in mind or looking to hire
             <br />
             My inbox is always open.
           </p>

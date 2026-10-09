@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col min-h-dvh space-y-4 max-w-4xl mx-auto w-full">
+    <main className="flex flex-col min-h-dvh max-w-4xl mx-auto w-full">
       <div>
         <Link
           href="/"
@@ -26,16 +26,6 @@ export default function ProjectsPage() {
           <ArrowLeftIcon className="size-3.5" />
           Back to Home
         </Link>
-
-        <div className="space-y-2 text-left">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            All Projects
-          </h2>
-          <p className="text-muted-foreground text-xs sm:text-sm">
-            A comprehensive showcase of web applications, mobile applications,
-            machine learning systems, motion design, and 3D visual.
-          </p>
-        </div>
       </div>
 
       <section aria-label="Project list with category filters">
